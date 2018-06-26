@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		0A014DE320E2BC9D002B5694 /* TitanFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A014DE120E2BC92002B5694 /* TitanFramework.framework */; };
 		0A014DE420E2BC9D002B5694 /* TitanFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A014DE120E2BC92002B5694 /* TitanFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0A014DEF20E2DE15002B5694 /* ImagesDrclinics.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A014DE620E2DE15002B5694 /* ImagesDrclinics.xcassets */; };
+		0A014DF020E2DE15002B5694 /* LaunchScreenDrclinics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A014DE720E2DE15002B5694 /* LaunchScreenDrclinics.storyboard */; };
+		0A014DF120E2DE15002B5694 /* logoDrclinics.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A014DE820E2DE15002B5694 /* logoDrclinics.png */; };
+		0A014DF220E2DE15002B5694 /* logoHeaderDrclinics.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A014DE920E2DE15002B5694 /* logoHeaderDrclinics.png */; };
+		0A014DF320E2DE15002B5694 /* logoHeaderDrclinics@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A014DEA20E2DE15002B5694 /* logoHeaderDrclinics@2x.png */; };
+		0A014DF420E2DE15002B5694 /* logoHeaderDrclinics@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A014DEB20E2DE15002B5694 /* logoHeaderDrclinics@3x.png */; };
+		0A014DF520E2DE15002B5694 /* logoVerticalDrclinics.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A014DEC20E2DE15002B5694 /* logoVerticalDrclinics.png */; };
+		0A014DF620E2DE15002B5694 /* logoVerticalDrclinics@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A014DED20E2DE15002B5694 /* logoVerticalDrclinics@2x.png */; };
+		0A014DF720E2DE15002B5694 /* logoVerticalDrclinics@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A014DEE20E2DE15002B5694 /* logoVerticalDrclinics@3x.png */; };
+		0A014DFC20E2DF38002B5694 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 0A014DF920E2DF38002B5694 /* Localizable.stringsdict */; };
 		0A42828D20E0EA2F0092C957 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A42828C20E0EA2F0092C957 /* AppDelegate.swift */; };
 		0A42828F20E0EA2F0092C957 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A42828E20E0EA2F0092C957 /* ViewController.swift */; };
 		0A42829220E0EA2F0092C957 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A42829020E0EA2F0092C957 /* Main.storyboard */; };
@@ -36,6 +46,16 @@
 /* Begin PBXFileReference section */
 		07E40A5529B12E05CC01D030 /* Pods-TestAdding2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAdding2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestAdding2/Pods-TestAdding2.debug.xcconfig"; sourceTree = "<group>"; };
 		0A014DE120E2BC92002B5694 /* TitanFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TitanFramework.framework; path = TestAdding2/Frameworks/TitanFramework.framework; sourceTree = "<group>"; };
+		0A014DE620E2DE15002B5694 /* ImagesDrclinics.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ImagesDrclinics.xcassets; sourceTree = "<group>"; };
+		0A014DE720E2DE15002B5694 /* LaunchScreenDrclinics.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreenDrclinics.storyboard; sourceTree = "<group>"; };
+		0A014DE820E2DE15002B5694 /* logoDrclinics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoDrclinics.png; sourceTree = "<group>"; };
+		0A014DE920E2DE15002B5694 /* logoHeaderDrclinics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoHeaderDrclinics.png; sourceTree = "<group>"; };
+		0A014DEA20E2DE15002B5694 /* logoHeaderDrclinics@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logoHeaderDrclinics@2x.png"; sourceTree = "<group>"; };
+		0A014DEB20E2DE15002B5694 /* logoHeaderDrclinics@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logoHeaderDrclinics@3x.png"; sourceTree = "<group>"; };
+		0A014DEC20E2DE15002B5694 /* logoVerticalDrclinics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoVerticalDrclinics.png; sourceTree = "<group>"; };
+		0A014DED20E2DE15002B5694 /* logoVerticalDrclinics@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logoVerticalDrclinics@2x.png"; sourceTree = "<group>"; };
+		0A014DEE20E2DE15002B5694 /* logoVerticalDrclinics@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logoVerticalDrclinics@3x.png"; sourceTree = "<group>"; };
+		0A014DFA20E2DF38002B5694 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = Base; path = Base.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		0A42828920E0EA2F0092C957 /* TestAdding2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAdding2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A42828C20E0EA2F0092C957 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A42828E20E0EA2F0092C957 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +82,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A014DE520E2DE15002B5694 /* SchemeDrclinics */ = {
+			isa = PBXGroup;
+			children = (
+				0A014DE620E2DE15002B5694 /* ImagesDrclinics.xcassets */,
+				0A014DE720E2DE15002B5694 /* LaunchScreenDrclinics.storyboard */,
+				0A014DE820E2DE15002B5694 /* logoDrclinics.png */,
+				0A014DE920E2DE15002B5694 /* logoHeaderDrclinics.png */,
+				0A014DEA20E2DE15002B5694 /* logoHeaderDrclinics@2x.png */,
+				0A014DEB20E2DE15002B5694 /* logoHeaderDrclinics@3x.png */,
+				0A014DEC20E2DE15002B5694 /* logoVerticalDrclinics.png */,
+				0A014DED20E2DE15002B5694 /* logoVerticalDrclinics@2x.png */,
+				0A014DEE20E2DE15002B5694 /* logoVerticalDrclinics@3x.png */,
+			);
+			path = SchemeDrclinics;
+			sourceTree = "<group>";
+		};
 		0A42828020E0EA2F0092C957 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +119,8 @@
 		0A42828B20E0EA2F0092C957 /* TestAdding2 */ = {
 			isa = PBXGroup;
 			children = (
+				0A014DF920E2DF38002B5694 /* Localizable.stringsdict */,
+				0A014DE520E2DE15002B5694 /* SchemeDrclinics */,
 				0A4282A420E0ED2B0092C957 /* Localizable.strings */,
 				0A4282A220E0ED210092C957 /* ExampleTheme.swift */,
 				0A42828C20E0EA2F0092C957 /* AppDelegate.swift */,
@@ -175,10 +213,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A014DF120E2DE15002B5694 /* logoDrclinics.png in Resources */,
+				0A014DF420E2DE15002B5694 /* logoHeaderDrclinics@3x.png in Resources */,
+				0A014DF320E2DE15002B5694 /* logoHeaderDrclinics@2x.png in Resources */,
 				0A42829720E0EA320092C957 /* LaunchScreen.storyboard in Resources */,
+				0A014DEF20E2DE15002B5694 /* ImagesDrclinics.xcassets in Resources */,
 				0A4282A620E0ED2B0092C957 /* Localizable.strings in Resources */,
 				0A42829420E0EA320092C957 /* Assets.xcassets in Resources */,
+				0A014DF620E2DE15002B5694 /* logoVerticalDrclinics@2x.png in Resources */,
+				0A014DF020E2DE15002B5694 /* LaunchScreenDrclinics.storyboard in Resources */,
 				0A42829220E0EA2F0092C957 /* Main.storyboard in Resources */,
+				0A014DF220E2DE15002B5694 /* logoHeaderDrclinics.png in Resources */,
+				0A014DF720E2DE15002B5694 /* logoVerticalDrclinics@3x.png in Resources */,
+				0A014DF520E2DE15002B5694 /* logoVerticalDrclinics.png in Resources */,
+				0A014DFC20E2DF38002B5694 /* Localizable.stringsdict in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +340,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		0A014DF920E2DF38002B5694 /* Localizable.stringsdict */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A014DFA20E2DF38002B5694 /* Base */,
+			);
+			name = Localizable.stringsdict;
+			sourceTree = "<group>";
+		};
 		0A42829020E0EA2F0092C957 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

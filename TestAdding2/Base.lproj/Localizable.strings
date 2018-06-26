@@ -5,6 +5,7 @@
   Created by Sergey Bystrov on 03.10.17.
   Copyright © 2017 Medlinesoft. All rights reserved.
 */
+
 // Common
 "CANCEL" = "Отмена";
 "EXIT" = "Выход";
@@ -21,12 +22,6 @@
 "NO" = "Нет";
 "YES" = "Да";
 
-// TitanManager
-"TITAN_MANAGER.AUTHENTICATE.ERROR.NOT_LOGGED_IN" = "Не удалось залогиниться, проверьте учетные данные";
-"TITAN_MANAGER.AUTHENTICATE.ERROR.NO_JSESSIONID" = "Не удалось получить сессионую куку для данного пользователя";
-"TITAN_MANAGER.AUTHENTICATE.ERROR.NO_PATIENTID" = "Не удалось получить идентификатор клиента";
-"TITAN_MANAGER.AUTHENTICATE.ERROR.NO_TOKEN" = "Не удалось получить токен";
-
 // DoctorListViewController
 "SPECIALIST_1" = "Терапевт";
 "SPECIALIST_2" = "Педиатр";
@@ -37,7 +32,7 @@
 "DOCTOR_LIST_VIEW_CONTROLLER.SELECT_DOCTOR.ALLERT.MESSAGE" = "Выберите специальность врача из списка";
 "DOCTOR_LIST_VIEW_CONTROLLER.SELECT_DOCTOR_CATEGORY.ALERT.TITLE" = "Категория врача";
 "DOCTOR_LIST_VIEW_CONTROLLER.SELECT_DOCTOR_CATEGORY.ALERT.MESSAGE" = "Выберите возрастную категорию врача";
-"DOCTOR_LIST_VIEW_CONTROLLER.DOCTORS_LIST_VIEW_CONTROLLER.TAB_BAR_ITEM.TITLE" = "Специалисты";
+"DOCTOR_LIST_VIEW_CONTROLLER.DOCTORS_LIST_VIEW_CONTROLLER.TAB_BAR_ITEM.TITLE" = "Врачи";
 
 // TMKDoctor
 "SPECIALITY_1" = "Врач-терапевт";
@@ -53,13 +48,17 @@
 
 // ProfileViewController
 "LOGOUT_MESSAGE" = "Вы действительно хотите выйти?";
+"FILTER_SPECIALITY_INIT_TITLE_BUTTON" = "Все специальности";
 
 // Duty doctors
 "DUTY_DOCTOR_FIRST_HEADER" = "Дежурный врач";
 "DUTY_DOCTOR_SECOND_HEADER" = "Прием специалиста";
 "DUTY_DOCTOR_FIRST_DESCRIPTION" = "Бесплатная онлайн консультация\n 10 минут в режиме живой очереди";
-"DUTY_DOCTOR_SECOND_DESCRIPTION" = "Выбрать удобное вам время для консультации\n профильного специалиста";
+"DUTY_DOCTOR_SECOND_DESCRIPTION" = "Выбрать удобное вам время для консультации профильного специалиста";
 "FILTER_SPECIALITY_INIT_TITLE_BUTTON" = "Все специальности";
+"DUTY_DOCTORS_NOT_AVAILABLE"= "К сожалению, сейчас врач не может\n вас принять";
+"DUTY_NOT_STARTED_YET"= "Прием еще не начался";
+"DUTY_IS_ENDED"= "На сегодня прием окончен";
 
 // DutyDoctorsVC
 "DUTY_DOCTORS_VC.DOCTOR_CANT_BE_ADDED.ALLERT.MESSAGE" = "Невозможно добавить врача в избранные. Пожалуйста обновите страницу";
@@ -71,32 +70,37 @@
 "REGISTER_PHONE_IS_EXIST"= "Пользователь с таким телефоном уже зарегистрирован. Хотите восстановить пароль?";
 
 // RegisterCompleteVC
-"REGISTRATION_COMPLETE_DESCRIPTION" = "Заполните анкету для улучшения качества обслуживания";
+"REGISTRATION_COMPLETE_DESCRIPTION" = "Заполните форму для получения максимально качественного обслуживания и ДМС скидки";
+
+// Chat
+"CHAT.ACCEPT_VIDEO" = "Пациент принял видеовызов";
+"CHAT.ACCEPT_AUDIO" = "Пациент принял аудиовызов";
+"CHAT.NO_ACCESS_TO_MICROPHONE" = "Доступ к микрофону запрещен";
+"CHAT.NO_ACCESS_TO_CAMERA" = "Доступ к камере запрещен";
 
 // TwoDutyDoctorsView
 "TWO_DUTY_DOCTORS_VIEW.TITLE" = "Срочная консультация";
-"TWO_DUTY_DOCTORS_VIEW.SUB_TITLE" = "В течение нескольких минут \nврачь с Вами свяжется";
+"TWO_DUTY_DOCTORS_VIEW.SUB_TITLE" = "В течение нескольких минут \nврач с Вами свяжется";
 
 // DutyDoctorBlockView
 "DUTY_DOCTOR_BLOCK_VIEW.BUTTON" = "Начать консультацию";
+
+//AppointmentListViewController
+"APPOINTMENT_LIST_VIEW_CONTROLLER.CANCELL.CONFIRMATION_MESSAGE" = "Вы уверены, что хотите отменить консультацию? \nДеньги будут перечислены на ваш счет в личном кабинете и вы сможете записаться на консультацию снова. \nДля возврата денег на карточку обратитесь по телефону \n%@";
+"APPOINTMENT_LIST_VIEW_CONTROLLER.CONTACT_WITH_DOCTOR.BUTTON" = "Связаться с врачом";
 
 // DoctorViewController
 "DOCTOR_VIEW_CONTROLLER.TITLE" = "О враче";
 "DOCTOR_VIEW_CONTROLLER.ABOUT_DOCTOR_TITLE" = "О враче";
 
-// AppointmentListViewController
-"APPOINTMENT_LIST_VIEW_CONTROLLER.CONTACT_WITH_DOCTOR.BUTTON" = "Связаться со специалистом";
-
 // FileListVC
-"FILE_LIST_VC.CONTACT_WITH_DOCTOR.BUTTON" = "Связаться со специалистом";
+"FILE_LIST_VC.CONTACT_WITH_DOCTOR.BUTTON" = "Связаться с врачем";
 "FILE_LIST_VC.FILE_LIST_DESCRIPTION" = "В этом списке будет отображаться список ваших файлов (документов)\n\nПолучите срочную помощь у дежурного врача или запишитесь к специалисту, чтобы создать свою первую консультацию.";
 
 // CHAT_VC
 "CHAT_VC.DOCTOR_NOT_CONNECTED" = "Врач не подключен";
 "CHAT_VC.DISCLAIMER" = "В ожидании начала консультации, Вы можете задать вопросы врачу и приложить необходимые изображения";
 "CHAT_VC.SELECT_RATING.MESSAGE" = "Пожалуйста, поставьте оценку врачу за качество оказанной услуги. Допустимы значения от 1 до 5";
-"CHAT.NO_ACCESS_TO_MICROPHONE" = "Доступ к микрофону запрещен";
-"CHAT.NO_ACCESS_TO_CAMERA" = "Доступ к камере запрещен";
 
 // TMKNotificationSettingsType
 "NOTIFICATION.APPOINTMENT_CREATED" = "Запись на консультацию";
@@ -128,7 +132,6 @@
 "TITAN_INITIALIZER.DOCTOR_CALLS" = "Вызов врача";
 "TITAN_INITIALIZER.DOCTOR_CALLS_ERROR" = "Ошибка вызова врача";
 "TITAN_INITIALIZER.CALL_DOCTOR" = "Вызвать врача";
-
 
 // CallPermissionsView
 "CALL_PERMISSIONS_VIEW.DESCRIPTION.AUDIO_AND_VIDEO" = "Вы запретили приложению доступ к микрофону и камере";

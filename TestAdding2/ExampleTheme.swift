@@ -16,7 +16,7 @@ class ExampleTheme: NSObject, TMKTheme {
     }
 
     func getImageLogoVertical() -> String {
-        return "logoVertical.png"
+        return "logoVerticalDrclinics.png"
     }
     
     func getPrivacyURL() -> URL {
@@ -33,7 +33,7 @@ class ExampleTheme: NSObject, TMKTheme {
     
 
     func getImageLogoHeader() -> String {
-        return "logo_header.png"
+        return "logoHeaderDrclinics.png"
     }
 
     func tintColor() -> UIColor {
