@@ -1,0 +1,153 @@
+/* 
+  dr.strings
+  DoctorRyadom
+
+  Created by Sergey Bystrov on 03.10.17.
+  Copyright © 2017 Medlinesoft. All rights reserved.
+*/
+// Common
+"CANCEL" = "Отмена";
+"EXIT" = "Выход";
+"MAKE_EXIT" = "Выйти";
+"ERROR" = "Ошибка";
+"CLOSE" = "Закрыть";
+"START_CONSULTATION_BUTTON" = "Начать консультацию";
+"ANONIM_PERSON" = "Анонимный пользователь";
+"SHARE_SUCCESS_TITLE" = "Поделиться";
+"FILE_SHARE_SUCCESS" = "Файл успешно отправлен";
+"FILE_SHARE_ERROR" = "При отправке файла проиозошла ошибка";
+"OK" = "Ok";
+"LOAD_DATA_MESSAGE"= "Загрузка данных";
+"NO" = "Нет";
+"YES" = "Да";
+
+// TitanManager
+"TITAN_MANAGER.AUTHENTICATE.ERROR.NOT_LOGGED_IN" = "Не удалось залогиниться, проверьте учетные данные";
+"TITAN_MANAGER.AUTHENTICATE.ERROR.NO_JSESSIONID" = "Не удалось получить сессионую куку для данного пользователя";
+"TITAN_MANAGER.AUTHENTICATE.ERROR.NO_PATIENTID" = "Не удалось получить идентификатор клиента";
+"TITAN_MANAGER.AUTHENTICATE.ERROR.NO_TOKEN" = "Не удалось получить токен";
+
+// DoctorListViewController
+"SPECIALIST_1" = "Терапевт";
+"SPECIALIST_2" = "Педиатр";
+"SPECIALIST_CALL_YOU_TEXT" = "В течение нескольких минут\n врач с Вами свяжется";
+"DOCTOR_LIST_VC.DUTY_DOCTOR.NOT_AVAILABLE" = "не доступен";
+"DOCTOR_LIST_VIEW_CONTROLLER.LOADING_DOCTORS_LIST.ERROR" = "Ошибка загрузки списка врачей: ";
+"DOCTOR_LIST_VIEW_CONTROLLER.DOCTOR_CANT_BE_ADDED" = "Невозможно добавить врача в избранные. Пожалуйста обновите страницу";
+"DOCTOR_LIST_VIEW_CONTROLLER.SELECT_DOCTOR.ALLERT.MESSAGE" = "Выберите специальность врача из списка";
+"DOCTOR_LIST_VIEW_CONTROLLER.SELECT_DOCTOR_CATEGORY.ALERT.TITLE" = "Категория врача";
+"DOCTOR_LIST_VIEW_CONTROLLER.SELECT_DOCTOR_CATEGORY.ALERT.MESSAGE" = "Выберите возрастную категорию врача";
+"DOCTOR_LIST_VIEW_CONTROLLER.DOCTORS_LIST_VIEW_CONTROLLER.TAB_BAR_ITEM.TITLE" = "Специалисты";
+
+// TMKDoctor
+"SPECIALITY_1" = "Врач-терапевт";
+"SPECIALITY_2" = "Врач-педиатр";
+
+// NotLoggedInViewController
+"LOGIN_BUTTON_TEXT" = "Войти";
+"REGISTRATION_BUTTON_TEXT" = "Зарегистрироваться";
+
+// AppointmentConfirmViewController
+"SPECIALIST_WILL_SEE_YOU_TEXT" = "Вас примут в течении 5 минут";
+"APPOINTMENT_PAY_IS_CANCELLED"= "К сожалению, консультация была отменена. Деньги будут перечислены на ваш счет в личном кабинете и вы сможете записаться на консультацию снова. Для возврата денег на карточку обратитесь по телефону";
+
+// ProfileViewController
+"LOGOUT_MESSAGE" = "Вы действительно хотите выйти?";
+
+// Duty doctors
+"DUTY_DOCTOR_FIRST_HEADER" = "Дежурный врач";
+"DUTY_DOCTOR_SECOND_HEADER" = "Прием специалиста";
+"DUTY_DOCTOR_FIRST_DESCRIPTION" = "Бесплатная онлайн консультация\n 10 минут в режиме живой очереди";
+"DUTY_DOCTOR_SECOND_DESCRIPTION" = "Выбрать удобное вам время для консультации\n профильного специалиста";
+"FILTER_SPECIALITY_INIT_TITLE_BUTTON" = "Все специальности";
+
+// DutyDoctorsVC
+"DUTY_DOCTORS_VC.DOCTOR_CANT_BE_ADDED.ALLERT.MESSAGE" = "Невозможно добавить врача в избранные. Пожалуйста обновите страницу";
+
+// RegisterViewController
+"REGISTER_NEED_ACCEPT_AGREEMENT_MESSAGE" = "Для продолжения прочтите и подтвердите согласие с условиями соглашения";
+"EMAIL_IS_INCORRECT_MESSAGE" = "Некорректный адрес эл.почты";
+"REGISTER_EMAIL_IS_EXIST"= "Пользователь с так почтой уже зарегистрирован. Хотите восстановить пароль?";
+"REGISTER_PHONE_IS_EXIST"= "Пользователь с таким телефоном уже зарегистрирован. Хотите восстановить пароль?";
+
+// RegisterCompleteVC
+"REGISTRATION_COMPLETE_DESCRIPTION" = "Заполните анкету для улучшения качества обслуживания";
+
+// TwoDutyDoctorsView
+"TWO_DUTY_DOCTORS_VIEW.TITLE" = "Срочная консультация";
+"TWO_DUTY_DOCTORS_VIEW.SUB_TITLE" = "В течение нескольких минут \nврачь с Вами свяжется";
+
+// DutyDoctorBlockView
+"DUTY_DOCTOR_BLOCK_VIEW.BUTTON" = "Начать консультацию";
+
+// DoctorViewController
+"DOCTOR_VIEW_CONTROLLER.TITLE" = "О враче";
+"DOCTOR_VIEW_CONTROLLER.ABOUT_DOCTOR_TITLE" = "О враче";
+
+// AppointmentListViewController
+"APPOINTMENT_LIST_VIEW_CONTROLLER.CONTACT_WITH_DOCTOR.BUTTON" = "Связаться со специалистом";
+
+// FileListVC
+"FILE_LIST_VC.CONTACT_WITH_DOCTOR.BUTTON" = "Связаться со специалистом";
+"FILE_LIST_VC.FILE_LIST_DESCRIPTION" = "В этом списке будет отображаться список ваших файлов (документов)\n\nПолучите срочную помощь у дежурного врача или запишитесь к специалисту, чтобы создать свою первую консультацию.";
+
+// CHAT_VC
+"CHAT_VC.DOCTOR_NOT_CONNECTED" = "Врач не подключен";
+"CHAT_VC.DISCLAIMER" = "В ожидании начала консультации, Вы можете задать вопросы врачу и приложить необходимые изображения";
+"CHAT_VC.SELECT_RATING.MESSAGE" = "Пожалуйста, поставьте оценку врачу за качество оказанной услуги. Допустимы значения от 1 до 5";
+"CHAT.NO_ACCESS_TO_MICROPHONE" = "Доступ к микрофону запрещен";
+"CHAT.NO_ACCESS_TO_CAMERA" = "Доступ к камере запрещен";
+
+// TMKNotificationSettingsType
+"NOTIFICATION.APPOINTMENT_CREATED" = "Запись на консультацию";
+"NOTIFICATION.APPOINTMENT_CREATED_ADMIN" = "Запись на консультацию";
+"NOTIFICATION.APPOINTMENT_REPORT_ADD" = "Получено заключение по консультации";
+"NOTIFICATION.APPOINTMENT_BEGIN_SOON" = "Консультация начнется через n минут";
+"NOTIFICATION.APPOINTMENT_QUEUE_ADD" = "Новый пациент в дежурной очереди";
+"NOTIFICATION.APPOINTMENT_FINISHED" = "Консультация завершена";
+"NOTIFICATION.APPOINTMENT_NOT_STARTED" = "Консультация не началась через n минут после планового начала";
+"NOTIFICATION.DUTY_APPOINTMENT_NOT_PROCESSED" = "Запрос к дежурным врачам не принят более 5 минут";
+"NOTIFICATION.APPOINTMENT_BAD_REVIEW" = "Получена отрицательная оценка врача";
+"NOTIFICATION.APPOINTMENT_WITHOUT_VIDEO" = "Телеконсультация завершена без видеозвонка";
+"NOTIFICATION.APPOINTMENT_VERY_SHORT" = "Телеконсультация длилась менее 2 минут";
+"NOTIFICATION.RECEIPT_TO_ACCOUNT" = "Поступление средств на личный счет";
+"NOTIFICATION.EXPENSE_FROM_ACCOUNT" = "Снятие средств с личного счета";
+"NOTIFICATION.GET_NEW_CHAT_MESSAGE" = "Новое сообщение в чате";
+"NOTIFICATION.QUEUE_LENGTH_CHANGED" = "Изменение длины очереди";
+"NOTIFICATION.APPOINTMENT_CANCELLED" = "Консультация отменена";
+"NOTIFICATION.DOCTOR_CALL_STARTED" = "Врач вызывает пациента";
+
+//ChatVCSystemCell
+"CHAT_VC_SYSTEM_CELL.DOCTOR_ADDED_DECISION" = "Врач добавил заключение";
+"CHAT_VC_SYSTEM_CELL.VIDEO_NOT_PERMITED" = "Доступ к камере запрещен";
+"CHAT_VC_SYSTEM_CELL.AUDIO_NOT_PERMITED" = "Доступ к микрофону запрещен";
+
+// TitanInitializer
+"TITAN_INITIALIZER.NOTIFICATION.DOCTOR_ADDED_DECISION" = "Добавлено заключение врача";
+"TITAN_INITIALIZER.NOTIFICATION.DOCTOR_CALLS_NOW" = "Вам звонит врач";
+"TITAN_INITIALIZER.DOCTOR_CALLS" = "Вызов врача";
+"TITAN_INITIALIZER.DOCTOR_CALLS_ERROR" = "Ошибка вызова врача";
+"TITAN_INITIALIZER.CALL_DOCTOR" = "Вызвать врача";
+
+
+// CallPermissionsView
+"CALL_PERMISSIONS_VIEW.DESCRIPTION.AUDIO_AND_VIDEO" = "Вы запретили приложению доступ к микрофону и камере";
+"CALL_PERMISSIONS_VIEW.DESCRIPTION.AUDIO" = "Вы запретили приложению доступ к микрофону";
+"CALL_PERMISSIONS_VIEW.DESCRIPTION.VIDEO" = "Вы запретили приложению доступ к камере";
+"CALL_PERMISSIONS_VIEW.BUTTON.TITLE" = "Разрешить доступ";
+"CALL_PERMISSIONS_VIEW.PERMIT.ALERT.TITLE" = "Разрешить доступ?";
+"CALL_PERMISSIONS_VIEW.PERMIT.AUDIO_AND_VIDEO.ALERT" = "Для полноценной работы, чтобы совершать видео и аудио звонки, приложению необходим доступ к микрофону и камере";
+"CALL_PERMISSIONS_VIEW.PERMIT.AUDIO.ALERT" = "Для полноценной работы, чтобы совершать видео и аудио звонки, приложению необходим доступ к микрофону";
+"CALL_PERMISSIONS_VIEW.PERMIT.VIDEO.ALERT" = "Для полноценной работы, чтобы совершать видео и аудио звонки, приложению необходим доступ к камере";
+"CALL_PERMISSIONS_VIEW.PERMIT" = "Разрешить";
+
+// ChatFooter
+"CHAT_FOOTER.LABEL" = "Консультация завершена";
+"CHAT_FOOTER.LABEL.YOUR_COMMENT" = "Ваш отзыв";
+"CHAT_FOOTER.ADD_REVIEW_BUTTON.TITLE" = "Оставить отзыв";
+
+// TMKCallViewController
+"TMK_CALL_VIEW_CONTROLLER.NO_AUDIO_PERMISSION.ALERT.TITLE" = "Разрешить доступ";
+"TMK_CALL_VIEW_CONTROLLER.NO_AUDIO_PERMISSION.ALERT.MESSAGE" = "Для полноценной работы, чтобы совершать видео и аудио звонки, приложению необходим доступ к микрофону и камере";
+"TMK_CALL_VIEW_CONTROLLER.PERMISSION.CANCEL" = "Запретить";
+"TMK_CALL_VIEW_CONTROLLER.PERMISSION.PERMIT" = "Разрешить";

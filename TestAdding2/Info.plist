@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>TMK_LOCALIZATION_FILE</key>
+	<string>$(TMK_LOCALIZATION_FILE)</string>
+	<key>Fabric</key>
+	<dict>
+		<key>Kits</key>
+		<array>
+			<dict>
+				<key>KitName</key>
+				<string>Crashlytics</string>
+				<key>KitInfo</key>
+				<dict/>
+			</dict>
+		</array>
+		<key>APIKey</key>
+		<string>9c855a3c916c6717f9b6d54fa1f4eebbac0dedfe</string>
+	</dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>	
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>Видео-консультация с врачом</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>Информация для расчета критических значений: вес, рост, возраст</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>Сохранение ЧСС и других поаказателей здоровья</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Для определения местоположения в случае экстренной ситуации</string>
+	<key>NSLocationUsageDescription</key>
+	<string>Для определения местоположения в случае экстренной ситуации</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Для определения местоположения в случае экстренной ситуации</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Видео-консультация с врачом</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Отправка фотографий в консультацию</string>
+</dict>
+</plist>
