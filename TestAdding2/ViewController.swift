@@ -35,9 +35,10 @@ class ViewController: UIViewController {
             let authUserDataForTest = AuthUserDataForTest(json: convertToDictionary(text: jsonString)!)
             userData = authUserDataForTest!.authUserData!
         }
-        
-        TitanManager.sharedInstance.authenticate(authUserData: userData, onSuccess: {
+
+        MimasManager.sharedInstance.api.login(authUserData: userData, onSuccess: {
             print("±±±±±1")
+            MimasManager.sharedInstance.api.sendAPNSToken()
             self.showInfoAlert(message: "Успешно")
         }, onError: { error in
             print("±±±±±2 \(error)")
