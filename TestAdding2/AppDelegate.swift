@@ -16,9 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        print("123")
+        print("start init")
         // Override point for customization after application launch.
-        TitanManager.sharedInstance.initialize(window, application, ExampleTheme())
+        MimasManager.sharedInstance.initialize(window, application, ExampleTheme())
+        MimasManager.sharedInstance.initPush()
+        MimasManager.sharedInstance.initNotifications()
+        MimasManager.sharedInstance.setLogLevel(.error)
+        print("finish init")
         return true
     }
     

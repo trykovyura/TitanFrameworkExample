@@ -8,12 +8,12 @@
 
 import UIKit
 import TitanFramework
-import Arcane
 import UITextView_Placeholder
 
 class ViewController: UIViewController {
     
     @IBOutlet weak var userDataTextView: UITextView!
+    @IBOutlet weak var appointmentId: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,8 +27,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func loginAction(_ sender: Any) {
-        var userData = AuthUserData(secretKey: "phaiNgahJai8")
-        userData.login = "zzz@zz.zz"
+        var userData = AuthUserData(secretKey: "WHnnVKWLfEvZ3")
+        userData.login = "zzzz@zz.zz"
         userData.password = "1234"
         
         if let jsonString = userDataTextView.text, userDataTextView.text != "" {
@@ -46,8 +46,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func startTMKTitanAction(_ sender: Any) {
-        let startViewController = TitanManager.sharedInstance.getStartScreen()
-        self.navigationController?.pushViewController(startViewController!, animated: true)
+        print("openChatAction")
+        if let appointmentId = appointmentId.text {
+            MimasManager.sharedInstance.requestPermissions()
+            let chatVC = MimasManager.sharedInstance.getChatScreen(appointmentId)
+            print("openChatAction chatVC = \(chatVC)")
+            self.navigationController?.pushViewController(chatVC, animated: true)
+        }
     }
     
     private func convertToDictionary(text: String) -> [String: Any]? {

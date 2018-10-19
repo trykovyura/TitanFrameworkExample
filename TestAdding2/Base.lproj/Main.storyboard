@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="W34-am-fXO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="W34-am-fXO">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -28,7 +27,7 @@
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="TMKTitanFramework_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="TestAdding2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -37,22 +36,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0y-TG-349">
-                                <rect key="frame" x="133" y="318" width="108" height="30"/>
-                                <state key="normal" title="Start TMK Titan"/>
-                                <connections>
-                                    <action selector="startTMKTitanAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pGU-bE-vUF"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSU-Et-lsu">
-                                <rect key="frame" x="170" y="215" width="34" height="30"/>
+                                <rect key="frame" x="170.5" y="215" width="34" height="30"/>
                                 <state key="normal" title="login"/>
                                 <connections>
                                     <action selector="loginAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="RqX-9W-pAh"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ChI-fz-5kN">
-                                <rect key="frame" x="67" y="59" width="240" height="128"/>
+                                <rect key="frame" x="67" y="59" width="241" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="cY3-SA-39M"/>
@@ -60,20 +52,40 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="appointmentId (e.g 4811)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sx2-V4-GsX">
+                                <rect key="frame" x="98.5" y="318" width="178" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="178" id="RBC-tN-Rzc"/>
+                                    <constraint firstAttribute="height" constant="30" id="XZf-7k-fsc"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0y-TG-349">
+                                <rect key="frame" x="132" y="381" width="111" height="30"/>
+                                <state key="normal" title="Start framework"/>
+                                <connections>
+                                    <action selector="startTMKTitanAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pGU-bE-vUF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ChI-fz-5kN" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="26P-Ym-yaR"/>
-                            <constraint firstItem="X0y-TG-349" firstAttribute="top" secondItem="pSU-Et-lsu" secondAttribute="bottom" constant="73" id="6tc-Fg-ywJ"/>
+                            <constraint firstItem="sx2-V4-GsX" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="4g5-us-GYq"/>
                             <constraint firstItem="ChI-fz-5kN" firstAttribute="centerX" secondItem="pSU-Et-lsu" secondAttribute="centerX" id="BuI-IM-gGm"/>
                             <constraint firstItem="pSU-Et-lsu" firstAttribute="top" secondItem="ChI-fz-5kN" secondAttribute="bottom" constant="28" id="CcL-Dt-s4g"/>
+                            <constraint firstItem="X0y-TG-349" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Ray-c9-cuI"/>
                             <constraint firstItem="ChI-fz-5kN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="51" id="TUM-4K-eo9"/>
-                            <constraint firstItem="ChI-fz-5kN" firstAttribute="centerX" secondItem="X0y-TG-349" secondAttribute="centerX" id="fX7-UZ-Otu"/>
+                            <constraint firstItem="X0y-TG-349" firstAttribute="top" secondItem="sx2-V4-GsX" secondAttribute="bottom" constant="33" id="Yho-3D-irs"/>
+                            <constraint firstItem="sx2-V4-GsX" firstAttribute="top" secondItem="pSU-Et-lsu" secondAttribute="bottom" constant="73" id="br6-4l-B3Z"/>
                             <constraint firstItem="ChI-fz-5kN" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="39" id="shS-nt-mQW"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="foz-C3-fWJ"/>
                     <connections>
+                        <outlet property="appointmentId" destination="sx2-V4-GsX" id="nmG-dy-klq"/>
                         <outlet property="userDataTextView" destination="ChI-fz-5kN" id="UFz-K2-D8u"/>
                     </connections>
                 </viewController>
