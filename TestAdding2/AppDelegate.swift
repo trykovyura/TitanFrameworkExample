@@ -49,19 +49,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, didReceive notification: UILocalNotification) {
-        TitanManager.sharedInstance.application(application, notification)
+        MimasManager.sharedInstance.processCallStartNotification(notification)
     }
     
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        TitanManager.sharedInstance.initializeYandexMetrica(deviceToken)
+        MimasManager.sharedInstance.initializeYandexMetrica(deviceToken)
     }
     
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any]) {
-        TitanManager.sharedInstance.handlePushNotification(userInfo)
+        MimasManager.sharedInstance.handlePushNotification(userInfo)
     }
     
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-        TitanManager.sharedInstance.handlePushNotification(userInfo)
+        MimasManager.sharedInstance.handlePushNotification(userInfo)
         completionHandler(.newData)
     }
 }
