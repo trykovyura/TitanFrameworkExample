@@ -1,16 +1,14 @@
 PODS:
   - AKMaskField (2.0.3)
   - Alamofire (4.7.2)
-  - AlamofireNetworkActivityLogger (2.3.0):
-    - Alamofire (~> 4.6)
   - AppsFlyerFramework (4.8.6)
-  - Charts (3.0.4):
-    - Charts/Core (= 3.0.4)
-  - Charts/Core (3.0.4)
+  - Charts (3.2.1):
+    - Charts/Core (= 3.2.1)
+  - Charts/Core (3.2.1)
   - Crashlytics (3.10.2):
     - Fabric (~> 1.7.7)
   - Fabric (1.7.7)
-  - FontBlaster (4.0.1)
+  - FontBlaster (4.1.0)
   - FSCalendar (2.7.9)
   - Gloss (2.0.1)
   - GoogleWebRTC (1.1.20621)
@@ -26,16 +24,16 @@ PODS:
   - RxAlamofire/Core (4.2.0):
     - Alamofire (~> 4.5)
     - RxSwift (~> 4)
-  - RxCocoa (4.1.2):
+  - RxCocoa (4.3.1):
     - RxSwift (~> 4.0)
   - RxSwift (4.2.0)
   - SnapKit (4.0.0)
   - SwiftDate (4.5.1)
   - "UITextView+Placeholder (1.2.1)"
-  - Validator (3.0.2)
-  - XCGLogger (6.0.4):
-    - XCGLogger/Core (= 6.0.4)
-  - XCGLogger/Core (6.0.4):
+  - Validator (3.1.1)
+  - XCGLogger (6.1.0):
+    - XCGLogger/Core (= 6.1.0)
+  - XCGLogger/Core (6.1.0):
     - ObjcExceptionBridging
   - YandexMobileMetrica (3.1.1):
     - YandexMobileMetrica/Static (= 3.1.1)
@@ -48,11 +46,10 @@ PODS:
 DEPENDENCIES:
   - AKMaskField
   - Alamofire (~> 4.4)
-  - AlamofireNetworkActivityLogger (~> 2.3)
-  - AppsFlyerFramework (~> 4.8.1)
-  - Charts (= 3.0.4)
+  - AppsFlyerFramework (~> 4.8.5)
+  - Charts (= 3.2.1)
   - Crashlytics
-  - FontBlaster (= 4.0.1)
+  - FontBlaster (= 4.1.0)
   - FSCalendar
   - Gloss (~> 2.0)
   - GoogleWebRTC (= 1.1.20621)
@@ -61,19 +58,18 @@ DEPENDENCIES:
   - IQKeyboardManagerSwift
   - MBProgressHUD (~> 1.1.0)
   - RxAlamofire
-  - RxCocoa (~> 4.1.2)
+  - RxCocoa (~> 4.3.0)
   - SnapKit (~> 4.0.0)
   - SwiftDate (~> 4.5.1)
   - "UITextView+Placeholder"
-  - Validator (~> 3.0.2)
-  - XCGLogger (~> 6.0.2)
+  - Validator (~> 3.1.1)
+  - XCGLogger (~> 6.1.0)
   - YandexMobileMetricaPush (~> 0.6.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AKMaskField
     - Alamofire
-    - AlamofireNetworkActivityLogger
     - AppsFlyerFramework
     - Charts
     - Crashlytics
@@ -101,12 +97,11 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   AKMaskField: b6d147524813e62cd3f15475fa2200ce7a3d2620
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
-  AlamofireNetworkActivityLogger: 6f3076652ab7fa6c819b59be08ea038d339e36d8
   AppsFlyerFramework: cd4fab954ab8034288575b5ac45c4532b2f36689
-  Charts: 0705898046257443f0afbbc3179f4b67507b6e48
+  Charts: f122fb70b19847fa5817d018b77d6c5a2296ab25
   Crashlytics: 0360624eea1c978a743feddb2fb1ef8b37fb7a0d
   Fabric: bda89e242bce1b7b8ab264248cf3407774ce0095
-  FontBlaster: 84229df8e3a7a6dacb190565bc543747a0c323f9
+  FontBlaster: 127aa66419478d1c62926c7fdb39841633344a45
   FSCalendar: a04b09f16f811bc92e82f3cf852a15225233b9d5
   Gloss: 1e8743f8de1fbe14a97f220ff901cba91ae5f8f8
   GoogleWebRTC: bdc7453b450d0970aee538b1297f670d7234a0b1
@@ -116,16 +111,16 @@ SPEC CHECKSUMS:
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
   RxAlamofire: 87a9c588541210cc3e4a1f843ccc3ecf3eb98b31
-  RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
+  RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
   RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SwiftDate: 7b56d42a221f582047287deb256b23fc5ed49a60
   "UITextView+Placeholder": 0c3efd97f37ea64bde7f34cc6e90fe02e87b3909
-  Validator: bf211c1d71b3f910d230c09c70e62429d0fef63a
-  XCGLogger: 4fc1bc0bdd5828cb8dc8da7a843536cda1bea8f3
+  Validator: b34ab17a8fffd0c1ffd8f9002ead4d1e02cd9e6e
+  XCGLogger: 7f7f43f15dfe3a305fa1342b7dc29af656289abd
   YandexMobileMetrica: e849316e9e934b8525e65bc906090f0577de1340
   YandexMobileMetricaPush: 973073e69b63c9c3ec45ccb1fbfecd997538650a
 
-PODFILE CHECKSUM: 94764bfe156cb4b5f21110f4486658b39b1e120a
+PODFILE CHECKSUM: 2c49de845710d5b0ad4b42341ffb637b540078aa
 
 COCOAPODS: 1.5.3
