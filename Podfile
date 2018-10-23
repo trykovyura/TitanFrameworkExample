@@ -25,14 +25,14 @@ pod 'RxAlamofire'
 pod 'RxCocoa', '~> 4.3.0'
 pod 'Gloss', '~> 2.0'
 pod 'Validator', '~> 3.1.1'
-pod 'SnapKit', '~> 4.0.0'
+pod 'SnapKit', '~> 4.2.0'
 pod 'InputMask'
 pod 'YandexMobileMetricaPush', '~> 0.6.0'
 pod 'UITextView+Placeholder'
 pod 'HTTPLogger'
 end
 
-swift4 = ['SwiftDate', 'SnapKit']
+swift4 = ['SwiftDate']
 
 post_install do |installer|
     installer.pods_project.targets.each do |target|
