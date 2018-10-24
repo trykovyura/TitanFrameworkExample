@@ -13,14 +13,17 @@ import TitanFramework
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
-    
-    
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         print("start init")
         // Override point for customization after application launch.
         MimasManager.sharedInstance.initialize(window, application, ExampleTheme())
         MimasManager.sharedInstance.initPush()
-        MimasManager.sharedInstance.initNotifications()
+        if #available(iOS 10.0, *) {
+            let temp = MimasManager.sharedInstance.getNotificationCategory()
+            print("temp = \(temp)")
+        }
+//        MimasManager.sharedInstance.initNotifications()
 //        MimasManager.sharedInstance.setLogLevel(.error)
         print("finish init")
         return true
