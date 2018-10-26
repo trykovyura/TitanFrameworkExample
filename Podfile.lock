@@ -28,7 +28,7 @@ PODS:
     - RxSwift (~> 4.0)
   - RxSwift (4.2.0)
   - SnapKit (4.2.0)
-  - SwiftDate (4.5.1)
+  - SwiftDate (5.0.10)
   - "UITextView+Placeholder (1.2.1)"
   - Validator (3.1.1)
   - XCGLogger (6.1.0):
@@ -60,7 +60,7 @@ DEPENDENCIES:
   - RxAlamofire
   - RxCocoa (~> 4.3.0)
   - SnapKit (~> 4.2.0)
-  - SwiftDate (~> 4.5.1)
+  - SwiftDate (~> 5.0.10)
   - "UITextView+Placeholder"
   - Validator (~> 3.1.1)
   - XCGLogger (~> 6.1.0)
@@ -114,13 +114,13 @@ SPEC CHECKSUMS:
   RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
   RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
-  SwiftDate: 7b56d42a221f582047287deb256b23fc5ed49a60
+  SwiftDate: fcdaa7ca22a903faf6d7ed231239a88d174dcae3
   "UITextView+Placeholder": 0c3efd97f37ea64bde7f34cc6e90fe02e87b3909
   Validator: b34ab17a8fffd0c1ffd8f9002ead4d1e02cd9e6e
   XCGLogger: 7f7f43f15dfe3a305fa1342b7dc29af656289abd
   YandexMobileMetrica: e849316e9e934b8525e65bc906090f0577de1340
   YandexMobileMetricaPush: 973073e69b63c9c3ec45ccb1fbfecd997538650a
 
-PODFILE CHECKSUM: e5c312b19cfd00b47462745114354429c863a1b5
+PODFILE CHECKSUM: 0a0d2aaf63aa0c4cc1c0cf8db6bd94fde6da1b52
 
 COCOAPODS: 1.5.3

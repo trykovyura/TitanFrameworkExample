@@ -12,7 +12,7 @@ pod 'GoogleWebRTC', '1.1.20621' #'~> 1.1.22700' #1.1.23621
 pod 'Alamofire', '~> 4.4'
 pod 'AppsFlyerFramework', '~> 4.8.5'
 pod 'Crashlytics'
-pod 'SwiftDate', '~> 4.5.1'
+pod 'SwiftDate', '~> 5.0.10'
 
 pod 'MBProgressHUD', '~> 1.1.0'
 pod 'IQKeyboardManagerSwift'
