@@ -8,6 +8,7 @@
 
 import UIKit
 import TitanFramework
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,8 +21,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         MimasManager.sharedInstance.initialize(window, application, ExampleTheme())
         MimasManager.sharedInstance.initPush()
         if #available(iOS 10.0, *) {
+            let center = UNUserNotificationCenter.current()
+            center.delegate = self
             let temp = MimasManager.sharedInstance.getNotificationCategory()
             print("temp = \(temp)")
+            center.requestAuthorization(options: [.alert, .sound,. badge]) { (granted, error) in
+                if (granted) {
+                    print("User notifications granted")
+
+                    center.setNotificationCategories([temp])
+
+                    DispatchQueue.main.async(execute: {
+                        UIApplication.shared.registerForRemoteNotifications()
+                    })
+                } else {
+                    print("User notifications access DENIED")
+                    print("error = \(error)")
+                }
+            }
+            center.removeAllPendingNotificationRequests()
+            center.removeAllDeliveredNotifications()
         }
 //        MimasManager.sharedInstance.initNotifications()
 //        MimasManager.sharedInstance.setLogLevel(.error)
@@ -66,6 +85,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
         MimasManager.sharedInstance.handlePushNotification(userInfo)
         completionHandler(.newData)
+    }
+}
+
+extension AppDelegate: UNUserNotificationCenterDelegate {
+
+    @available(iOS 10.0, *)
+    public func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        print(" >>>>>>> didReceive <<<<<<< ")
+        MimasManager.sharedInstance.processUserNotification(response: response, completionHandler: completionHandler)
     }
 }
 

@@ -97,6 +97,7 @@ class ExampleTheme: NSObject, TMKTheme {
     }
     
     func getPartnerId() -> String {
+//        return "008"
         return "077"
     }
     

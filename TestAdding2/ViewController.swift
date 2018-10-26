@@ -27,7 +27,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func loginAction(_ sender: Any) {
-        var userData = AuthUserData(secretKey: "WHnnVKWLfEvZ3")
+        var userData = AuthUserData(secretKey: "WHnnVKWLfEvZ3") // 47
+//        var userData = AuthUserData(secretKey: "Wnw21$$nl!sdf") //43
         userData.login = "zzzz@zz.zz"
         userData.password = "1234"
         
