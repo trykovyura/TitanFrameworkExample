@@ -32,19 +32,4 @@ pod 'UITextView+Placeholder'
 pod 'HTTPLogger'
 end
 
-swift4 = ['SwiftDate']
 
-post_install do |installer|
-    installer.pods_project.targets.each do |target|
-        
-        if swift4.include?(target.name)
-            swift_version = '4.0'
-        end
-                
-        if swift_version
-            target.build_configurations.each do |config|
-                config.build_settings['SWIFT_VERSION'] = swift_version
-            end
-        end
-    end
-end
