@@ -24,7 +24,7 @@ class ExampleTheme: NSObject, TMKTheme {
     }
     
     func getProductionServer() -> String {
-        return "https://telemed.medlinesoft.ru:8447"
+        return "https://telemed.medlinesoft.ru:8443"
     }
     
     func getSupportPhone() -> String {
@@ -97,8 +97,8 @@ class ExampleTheme: NSObject, TMKTheme {
     }
     
     func getPartnerId() -> String {
-//        return "008"
-        return "077"
+        return "008" //43
+//        return "077"
     }
     
     func isExternalAuthentication() -> Bool {

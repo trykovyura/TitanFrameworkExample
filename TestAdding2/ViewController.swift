@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         userDataTextView.placeholder = "{\"deviceType\":\"IOS\",\"login\":\"zzz@zz.zz\",\"password\":\"1234\"}"
-        // Do any additional setup after loading the view, typically from a nib.
+        // Do any additional setup after loading the view, typically from a nib.                
     }
     
     override func didReceiveMemoryWarning() {
@@ -26,9 +26,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
     @IBAction func loginAction(_ sender: Any) {
-        var userData = AuthUserData(secretKey: "WHnnVKWLfEvZ3") // 47
-//        var userData = AuthUserData(secretKey: "Wnw21$$nl!sdf") //43
+//        var userData = AuthUserData(secretKey: "WHnnVKWLfEvZ3") // 47
+        var userData = AuthUserData(secretKey: "Wnw21$$nl!sdf") //43
         userData.login = "zzzz@zz.zz"
         userData.password = "1234"
         

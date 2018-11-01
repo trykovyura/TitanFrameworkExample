@@ -9,22 +9,36 @@
 import UIKit
 import TitanFramework
 import UserNotifications
+import PushKit
+import CallKit
+import XCGLogger
+
+let log2 = XCGLogger.default
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
+    
+    let cacheDirectory: URL = {
+        let urls = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask)
+        return urls[urls.endIndex - 1]
+    }()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        print("start init")
+        initLogger()
+        log2.debug("start init")
+        
         // Override point for customization after application launch.
         MimasManager.sharedInstance.initialize(window, application, ExampleTheme())
         MimasManager.sharedInstance.initPush()
+        MimasManager.sharedInstance.setPushDelegate(self)
+//        voipRegistration()
         if #available(iOS 10.0, *) {
             let center = UNUserNotificationCenter.current()
             center.delegate = self
             let temp = MimasManager.sharedInstance.getNotificationCategory()
-            print("temp = \(temp)")
+            log2.debug("temp = \(temp)")
             center.requestAuthorization(options: [.alert, .sound,. badge]) { (granted, error) in
                 if (granted) {
                     print("User notifications granted")
@@ -44,8 +58,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
 //        MimasManager.sharedInstance.initNotifications()
 //        MimasManager.sharedInstance.setLogLevel(.error)
-        print("finish init")
+        log2.debug("finish init")
+        
+//        NotificationCenter.default.addObserver(self,
+//                                               selector: #selector(self.onDoctorCallStarted),
+//                                               name: Notification.Name("TMKDoctorCallStarted"), //.TMKDoctorCallStarted,
+//                                               object: nil)
+        
         return true
+    }
+
+    func initLogger() {
+        let logPath: URL = cacheDirectory.appendingPathComponent("ExampleLog.txt")
+        let fileDestination = AutoRotatingFileDestination(writeToFile: logPath, identifier: "advancedLogger.fileDestination",
+                                                          shouldAppend: true,
+                                                          attributes: [.protectionKey: FileProtectionType.completeUntilFirstUserAuthentication])
+        fileDestination.outputLevel = .debug
+        fileDestination.showLogIdentifier = false
+        fileDestination.showFunctionName = true
+        fileDestination.showThreadName = true
+        fileDestination.showLevel = true
+        fileDestination.showFileName = true
+        fileDestination.showLineNumber = true
+        fileDestination.showDate = true
+        fileDestination.logQueue = XCGLogger.logQueue
+        fileDestination.targetMaxLogFiles = 10
+        
+        log2.add(destination: fileDestination)
+    }
+    
+    public func voipRegistration() {
+        let voipRegistry: PKPushRegistry = PKPushRegistry(queue: DispatchQueue.main)
+        voipRegistry.delegate = self
+        voipRegistry.desiredPushTypes = [PKPushType.voIP]
+        print(" >>>>> voipRegistry = \(voipRegistry)")
     }
     
     func applicationWillResignActive(_ application: UIApplication) {
@@ -92,8 +138,55 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
 
     @available(iOS 10.0, *)
     public func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        print(" >>>>>>> didReceive <<<<<<< ")
+        log2.debug(" >>>>>>> didReceive <<<<<<< ")
         MimasManager.sharedInstance.processUserNotification(response: response, completionHandler: completionHandler)
     }
 }
 
+extension AppDelegate: PKPushRegistryDelegate {
+    public func pushRegistry(_ registry: PKPushRegistry, didUpdate pushCredentials: PKPushCredentials, for type: PKPushType) {
+        log2.debug(" <><><> 1")
+        let voipToken = pushCredentials.token.map { String(format: "%02.2hhx", $0) }.joined()
+        MimasManager.sharedInstance.api.sendAPNSToken(voipToken)
+        log2.debug("voip token: \(voipToken)")
+    }
+
+    public func pushRegistry(_ registry: PKPushRegistry, didReceiveIncomingPushWith payload: PKPushPayload, for type: PKPushType) {
+        log2.debug(" <><><> 2")
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let startViewController = storyboard.instantiateInitialViewController()
+        MimasManager.sharedInstance.setRootViewController(startViewController!)
+    }
+
+    public func pushRegistry(_ registry: PKPushRegistry, didReceiveIncomingPushWith payload: PKPushPayload, for type: PKPushType, completion: @escaping () -> Void) {
+        log2.debug(" <><><> 3")
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let startViewController = storyboard.instantiateInitialViewController()
+        MimasManager.sharedInstance.setRootViewController(startViewController!)
+    }
+
+    public func pushRegistry(_ registry: PKPushRegistry, didInvalidatePushTokenFor type: PKPushType) {
+        log2.debug(" <><><> 4")
+    }
+}
+
+extension AppDelegate {
+    @objc func onDoctorCallStarted(notification: NSNotification) {
+        if let appointmentId = notification.object as? String {
+            DispatchQueue.main.async {
+                // Open chat
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let startViewController = storyboard.instantiateInitialViewController()
+                startViewController?.view.backgroundColor = .yellow
+                let chatVC = MimasManager.sharedInstance.getChatScreen(appointmentId)
+
+                if let navVC = startViewController as? UINavigationController {
+                    navVC.pushViewController(chatVC, animated: false)
+                } else {
+                    startViewController?.navigationController?.pushViewController(chatVC, animated: true)
+                }
+
+            }
+        }
+    }
+}
