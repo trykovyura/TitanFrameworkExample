@@ -32,7 +32,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         MimasManager.sharedInstance.initialize(window, application, ExampleTheme())
         MimasManager.sharedInstance.initPush()
-        MimasManager.sharedInstance.setPushDelegate(self)
+//        MimasManager.sharedInstance.setPushDelegate(self)
+        MimasManager.sharedInstance.delegate = self
 //        voipRegistration()
         if #available(iOS 10.0, *) {
             let center = UNUserNotificationCenter.current()
@@ -170,23 +171,36 @@ extension AppDelegate: PKPushRegistryDelegate {
     }
 }
 
-extension AppDelegate {
-    @objc func onDoctorCallStarted(notification: NSNotification) {
-        if let appointmentId = notification.object as? String {
-            DispatchQueue.main.async {
-                // Open chat
-                let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                let startViewController = storyboard.instantiateInitialViewController()
-                startViewController?.view.backgroundColor = .yellow
-                let chatVC = MimasManager.sharedInstance.getChatScreen(appointmentId)
-
-                if let navVC = startViewController as? UINavigationController {
-                    navVC.pushViewController(chatVC, animated: false)
-                } else {
-                    startViewController?.navigationController?.pushViewController(chatVC, animated: true)
+extension AppDelegate: MimasManagerDelegate {
+    func didReceiveDoctorCall(_ appointmentId: String?) {
+                DispatchQueue.main.async {
+                    var navVC: UINavigationController
+                    if let rootVC = self.window!.rootViewController {
+                        print(">> rootVC = \(rootVC)")
+                        if let existNavVc = rootVC as? UINavigationController {
+                            print(">> existNavVc = \(existNavVc)")
+                            navVC = existNavVc
+                        } else {
+                            print(">> not existNavVc")
+                            if let rootNavVC = rootVC.navigationController {
+                                print(">> rootNavVC = \(rootNavVC)")
+                                navVC = rootNavVC
+                            } else {
+                                navVC = UINavigationController(rootViewController: rootVC)
+                            }
+                        }
+                    } else {
+                        navVC = UINavigationController()
+                        self.window!.rootViewController = navVC
+                        self.window!.makeKeyAndVisible()
+                    }
+        
+                    // Open chat
+                    let chatVC = MimasManager.sharedInstance.getChatScreen(appointmentId!)
+                    print(">> chatVC = \(chatVC)")
+                    navVC.pushViewController(chatVC, animated: true)
+                    print(">> navVC.viewControllers = \(navVC.viewControllers)")
                 }
-
-            }
-        }
     }
 }
+
