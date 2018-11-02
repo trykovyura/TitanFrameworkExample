@@ -18,7 +18,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         userDataTextView.placeholder = "{\"deviceType\":\"IOS\",\"login\":\"zzz@zz.zz\",\"password\":\"1234\"}"
-        // Do any additional setup after loading the view, typically from a nib.                
+        // Do any additional setup after loading the view, typically from a nib.
+        
+//        NotificationCenter.default.addObserver(self,
+//                                               selector: #selector(self.onDoctorCallStarted),
+//                                               name: .TMKDoctorCallStarted,
+//                                               object: nil)
     }
     
     override func didReceiveMemoryWarning() {
@@ -75,6 +80,25 @@ class ViewController: UIViewController {
             
         }))
         self.present(alertController, animated: true, completion: nil)
+    }
+    
+    @objc func onDoctorCallStarted(notification: NSNotification) {
+        print(" TU TU TU TU ")
+        if let appointmentId = notification.object as? String {
+            DispatchQueue.main.async {
+                // Open chat
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let startViewController = storyboard.instantiateInitialViewController()
+                startViewController?.view.backgroundColor = .yellow
+                let chatVC = MimasManager.sharedInstance.getChatScreen(appointmentId)
+                
+                if let navVC = startViewController as? UINavigationController {
+                    navVC.pushViewController(chatVC, animated: false)
+                } else {
+                    startViewController?.navigationController?.pushViewController(chatVC, animated: true)
+                }
+            }
+        }
     }
 }
 
