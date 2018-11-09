@@ -61,7 +61,6 @@ DEPENDENCIES:
   - MBProgressHUD (~> 1.1.0)
   - RxAlamofire
   - RxCocoa (~> 4.3.0)
-  - RxSwift (~> 4.4.0)
   - SnapKit (~> 4.2.0)
   - SwiftDate (~> 5.0.10)
   - "UITextView+Placeholder"
@@ -127,6 +126,6 @@ SPEC CHECKSUMS:
   YandexMobileMetrica: 415e4e8a7a23121a3d086958a655f444dd340edb
   YandexMobileMetricaPush: 43d7c6bbaeee637418a8d3c287af93df1fb512d5
 
-PODFILE CHECKSUM: e9c67b04f6d17f1007095ac92edb477e9e48abb3
+PODFILE CHECKSUM: 2b1d3326ba647000f562fb8220e19c456af3f80a
 
 COCOAPODS: 1.5.3

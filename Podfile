@@ -31,7 +31,7 @@ pod 'YandexMobileMetrica', '~> 3.3.0'
 pod 'YandexMobileMetricaPush', '~> 0.7.0'
 pod 'UITextView+Placeholder'
 pod 'HTTPLogger'
-pod 'RxSwift', '~> 4.4.0'
+# pod 'RxSwift', '~> 4.4.0'
 end
 
 

@@ -32,9 +32,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         MimasManager.sharedInstance.initialize(window, application, ExampleTheme())
         MimasManager.sharedInstance.initPush()
-//        MimasManager.sharedInstance.setPushDelegate(self)
         MimasManager.sharedInstance.delegate = self
-//        voipRegistration()
+
         if #available(iOS 10.0, *) {
             let center = UNUserNotificationCenter.current()
             center.delegate = self
@@ -60,12 +59,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        MimasManager.sharedInstance.initNotifications()
 //        MimasManager.sharedInstance.setLogLevel(.error)
         log2.debug("finish init")
-        
-//        NotificationCenter.default.addObserver(self,
-//                                               selector: #selector(self.onDoctorCallStarted),
-//                                               name: Notification.Name("TMKDoctorCallStarted"), //.TMKDoctorCallStarted,
-//                                               object: nil)
-        
+
         return true
     }
 
@@ -86,13 +80,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         fileDestination.targetMaxLogFiles = 10
         
         log2.add(destination: fileDestination)
-    }
-    
-    public func voipRegistration() {
-        let voipRegistry: PKPushRegistry = PKPushRegistry(queue: DispatchQueue.main)
-        voipRegistry.delegate = self
-        voipRegistry.desiredPushTypes = [PKPushType.voIP]
-        print(" >>>>> voipRegistry = \(voipRegistry)")
     }
     
     func applicationWillResignActive(_ application: UIApplication) {

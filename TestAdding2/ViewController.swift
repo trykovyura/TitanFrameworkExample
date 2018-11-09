@@ -19,11 +19,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         userDataTextView.placeholder = "{\"deviceType\":\"IOS\",\"login\":\"zzz@zz.zz\",\"password\":\"1234\"}"
         // Do any additional setup after loading the view, typically from a nib.
-        
-//        NotificationCenter.default.addObserver(self,
-//                                               selector: #selector(self.onDoctorCallStarted),
-//                                               name: .TMKDoctorCallStarted,
-//                                               object: nil)
     }
     
     override func didReceiveMemoryWarning() {
@@ -55,12 +50,19 @@ class ViewController: UIViewController {
     
     @IBAction func startTMKTitanAction(_ sender: Any) {
         print("openChatAction")
-        if let appointmentId = appointmentId.text {
-            MimasManager.sharedInstance.requestPermissions()
-            let chatVC = MimasManager.sharedInstance.getChatScreen(appointmentId)
-            print("openChatAction chatVC = \(chatVC)")
-            self.navigationController?.pushViewController(chatVC, animated: true)
-        }
+        MimasManager.sharedInstance.api.getAppointmentsByStates(states: [TMKAppointmentState.active, TMKAppointmentState.scheduled], onSuccess: { items in
+            print("±±±±±1")
+            self.showInfoAlert(message: "Загружено")
+        }, onError: { error in
+            print("±±±±±2 \(error)")
+            self.showInfoAlert(message: error)
+        })
+//        if let appointmentId = appointmentId.text {
+//            MimasManager.sharedInstance.requestPermissions()
+//            let chatVC = MimasManager.sharedInstance.getChatScreen(appointmentId)
+//            print("openChatAction chatVC = \(chatVC)")
+//            self.navigationController?.pushViewController(chatVC, animated: true)
+//        }
     }
     
     private func convertToDictionary(text: String) -> [String: Any]? {
@@ -81,24 +83,5 @@ class ViewController: UIViewController {
         }))
         self.present(alertController, animated: true, completion: nil)
     }
-    
-//    @objc func onDoctorCallStarted(notification: NSNotification) {
-//        print(" TU TU TU TU ")
-//        if let appointmentId = notification.object as? String {
-//            DispatchQueue.main.async {
-//                // Open chat
-//                let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//                let startViewController = storyboard.instantiateInitialViewController()
-//                startViewController?.view.backgroundColor = .yellow
-//                let chatVC = MimasManager.sharedInstance.getChatScreen(appointmentId)
-//
-//                if let navVC = startViewController as? UINavigationController {
-//                    navVC.pushViewController(chatVC, animated: false)
-//                } else {
-//                    startViewController?.navigationController?.pushViewController(chatVC, animated: true)
-//                }
-//            }
-//        }
-//    }
 }
 
