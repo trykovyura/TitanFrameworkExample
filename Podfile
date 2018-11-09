@@ -27,9 +27,11 @@ pod 'Gloss', '~> 2.0'
 pod 'Validator', '~> 3.1.1'
 pod 'SnapKit', '~> 4.2.0'
 pod 'InputMask'
-pod 'YandexMobileMetricaPush', '~> 0.6.0'
+pod 'YandexMobileMetrica', '~> 3.3.0'
+pod 'YandexMobileMetricaPush', '~> 0.7.0'
 pod 'UITextView+Placeholder'
 pod 'HTTPLogger'
+pod 'RxSwift', '~> 4.4.0'
 end
 
 
