@@ -30,9 +30,11 @@ class ViewController: UIViewController {
     @IBAction func loginAction(_ sender: Any) {
 //        var userData = AuthUserData(secretKey: "WHnnVKWLfEvZ3") // 47
         var userData = AuthUserData(secretKey: "Wnw21$$nl!sdf") //43
-        userData.login = "zzzz@zz.zz"
-        userData.password = "1234"
-        
+//        userData.login = "zzzz@zz.zz"
+//        userData.password = "1234"
+        userData.login = "+70000000000"
+        userData.password = "qwerty"
+
         if let jsonString = userDataTextView.text, userDataTextView.text != "" {
             let authUserDataForTest = AuthUserDataForTest(json: convertToDictionary(text: jsonString)!)
             userData = authUserDataForTest!.authUserData!
@@ -50,19 +52,19 @@ class ViewController: UIViewController {
     
     @IBAction func startTMKTitanAction(_ sender: Any) {
         print("openChatAction")
-        MimasManager.sharedInstance.api.getAppointmentsByStates(states: [TMKAppointmentState.active, TMKAppointmentState.scheduled], onSuccess: { items in
-            print("±±±±±1")
-            self.showInfoAlert(message: "Загружено")
-        }, onError: { error in
-            print("±±±±±2 \(error)")
-            self.showInfoAlert(message: error)
-        })
-//        if let appointmentId = appointmentId.text {
-//            MimasManager.sharedInstance.requestPermissions()
-//            let chatVC = MimasManager.sharedInstance.getChatScreen(appointmentId)
-//            print("openChatAction chatVC = \(chatVC)")
-//            self.navigationController?.pushViewController(chatVC, animated: true)
-//        }
+//        MimasManager.sharedInstance.api.getAppointmentsByStates(states: [TMKAppointmentState.active, TMKAppointmentState.scheduled], onSuccess: { items in
+//            print("±±±±±1")
+//            self.showInfoAlert(message: "Загружено")
+//        }, onError: { error in
+//            print("±±±±±2 \(error)")
+//            self.showInfoAlert(message: error)
+//        })
+        if let appointmentId = appointmentId.text {
+            MimasManager.sharedInstance.requestPermissions()
+            let chatVC = MimasManager.sharedInstance.getChatScreen(appointmentId)
+            print("openChatAction chatVC = \(chatVC)")
+            self.navigationController?.pushViewController(chatVC, animated: true)
+        }
     }
     
     private func convertToDictionary(text: String) -> [String: Any]? {
