@@ -54,6 +54,7 @@
 	<string>$(TMK_LOCALIZATION_FILE)</string>
 	<key>UIBackgroundModes</key>
 	<array>
+		<string>audio</string>
 		<string>remote-notification</string>
 		<string>voip</string>
 	</array>
