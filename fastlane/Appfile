@@ -1,0 +1,8 @@
+app_identifier("ru.medlinesoft.TestAdding2") # The bundle identifier of your app
+apple_id("info@medlinesoft.ru") # Your Apple email address
+
+itc_team_id("118714039") # App Store Connect Team ID
+team_id("DWUH6L3XCR") # Developer Portal Team ID
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile

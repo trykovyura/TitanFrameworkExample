@@ -51,6 +51,7 @@ DEPENDENCIES:
   - AppsFlyerFramework (~> 4.8.5)
   - Charts (= 3.2.1)
   - Crashlytics
+  - Fabric
   - FontBlaster (= 4.1.0)
   - FSCalendar
   - Gloss (~> 2.0)
@@ -126,6 +127,6 @@ SPEC CHECKSUMS:
   YandexMobileMetrica: 415e4e8a7a23121a3d086958a655f444dd340edb
   YandexMobileMetricaPush: 43d7c6bbaeee637418a8d3c287af93df1fb512d5
 
-PODFILE CHECKSUM: 2b1d3326ba647000f562fb8220e19c456af3f80a
+PODFILE CHECKSUM: c69622daccc98d18a517075e0c30d0cf5c74df8a
 
 COCOAPODS: 1.5.3

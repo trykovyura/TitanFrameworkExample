@@ -1,0 +1,33 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Push a new beta build to Fabric"
+  lane :fabric do      
+	  build_app(
+	    scheme: "TestAdding2",
+	    export_method: "development",
+	    include_bitcode: false,
+	    configuration: "Debug"        
+	  )
+	  crashlytics(
+	    api_token: "9c855a3c916c6717f9b6d54fa1f4eebbac0dedfe",
+	    build_secret: "a8e97557949524244c54532bd3548ba62b92c13da0c866da5123c7ae961e390f",
+	    groups: ['IosTesters']
+	  )
+	end
+end
