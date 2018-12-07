@@ -412,7 +412,6 @@ SWIFT_CLASS("_TtC14TitanFramework16TMKEAGLVideoView")
 @interface TMKEAGLVideoView : UIView <RTCEAGLVideoViewDelegate>
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (void)layoutSubviews;
 - (void)videoView:(RTCEAGLVideoView * _Nonnull)videoView didChangeVideoSize:(CGSize)size;
 @end
 
@@ -498,6 +497,8 @@ SWIFT_CLASS("_TtC14TitanFramework12TitanManager")
 @interface TitanManager : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
 
 
 

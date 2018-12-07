@@ -12,6 +12,8 @@ import UserNotifications
 import PushKit
 import CallKit
 import XCGLogger
+import Crashlytics
+import Fabric
 
 let log2 = XCGLogger.default
 
@@ -28,6 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         initLogger()
         log2.debug("start init")
+        Fabric.with([Crashlytics.self])
         
         // Override point for customization after application launch.
         MimasManager.sharedInstance.initialize(window, application, ExampleTheme())
@@ -183,6 +186,12 @@ extension AppDelegate: MimasManagerDelegate {
                     }
         
                     // Open chat
+                    if var vc = navVC.viewControllers.last as? ChatVCProtocol {
+//                        vc.appointmentId = appointmentId
+                        // Chat window is already openned
+                        return
+                    }
+                    
                     let chatVC = MimasManager.sharedInstance.getChatScreen(appointmentId!)
                     print(">> chatVC = \(chatVC)")
                     navVC.pushViewController(chatVC, animated: true)

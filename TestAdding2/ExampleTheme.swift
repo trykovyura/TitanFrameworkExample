@@ -120,4 +120,42 @@ class ExampleTheme: NSObject, TMKTheme {
     func isFamilySwitchedOn() -> Bool {
         return true
     }
+    
+    // Chat
+    func getCallControllersColorFirst() -> UIColor {
+        return UIColor(red:0.25, green:0.57, blue:0.25, alpha:1.0)
+    }
+    
+    func getCallControllersColorSecond() -> UIColor {
+        return .clear
+    }
+    
+    func getHangupColor() -> UIColor {
+        return UIColor(red:1.00, green:0.19, blue:0.19, alpha:1.0)
+    }
+    
+    func getCallBackgroundColor() -> UIColor {
+        return UIColor(red:0.30, green:0.30, blue:0.30, alpha:1.0)
+    }
+    
+    func getIncomeBubbleColor() -> UIColor {
+        return .white
+    }
+    
+    func getOutcomeBubbleColor() -> UIColor {
+        return UIColor(red:0.83, green:0.97, blue:0.83, alpha:1.0)
+    }
+    
+    // Font
+    func getRegularFontName() -> String {
+        return "FiraSans-Regular"
+    }
+    
+    func getMediumFontName() -> String {
+        return "FiraSans-Medium"
+    }
+    
+    func getBoldFontName() -> String {
+        return "FiraSans-Bold"
+    }
 }
