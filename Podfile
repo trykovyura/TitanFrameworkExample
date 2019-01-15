@@ -7,7 +7,6 @@ target 'TestAdding2' do
 
   # Pods for TestAdding2
 
-#  pod 'Starscream', '~> 3.0.4'
   pod 'GoogleWebRTC', '1.1.20621'
   pod 'Alamofire', '~> 4.4'
   pod 'RxAlamofire'
