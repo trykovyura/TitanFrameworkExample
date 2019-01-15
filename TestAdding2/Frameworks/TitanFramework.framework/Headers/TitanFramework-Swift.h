@@ -406,12 +406,19 @@ SWIFT_CLASS("_TtC14TitanFramework12TMKDutyPrice")
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
 
-@class RTCEAGLVideoView;
 
 SWIFT_CLASS("_TtC14TitanFramework16TMKEAGLVideoView")
-@interface TMKEAGLVideoView : UIView <RTCEAGLVideoViewDelegate>
+@interface TMKEAGLVideoView : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)layoutIfNeeded;
+@end
+
+
+
+@class RTCEAGLVideoView;
+
+@interface TMKEAGLVideoView (SWIFT_EXTENSION(TitanFramework)) <RTCEAGLVideoViewDelegate>
 - (void)videoView:(RTCEAGLVideoView * _Nonnull)videoView didChangeVideoSize:(CGSize)size;
 @end
 
