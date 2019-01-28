@@ -11,6 +11,26 @@ import TitanFramework
 
 class ExampleTheme: NSObject, TMKTheme {
 
+    func isHideRegistrationButton() -> Bool {
+        return false
+    }
+
+    func isShowMakeAppointmentButton() -> Bool {
+        return true
+    }
+
+    func isShowQueueNameInChat() -> Bool {
+        return true
+    }
+
+    func isShowNewMessagesCountOnBadge() -> Bool {
+        return true
+    }
+
+    func isShowConditionsInProfile() -> Bool {
+        return true
+    }
+
     func getItunesAppId() -> String {
         return "1316496574"
     }

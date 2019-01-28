@@ -28,6 +28,15 @@ class ViewController: UIViewController {
     
     
     @IBAction func loginAction(_ sender: Any) {
+        MimasManager.sharedInstance.api.login(deviceId: "", token: "ee207e00-44a9-4605-af3f-053db4c11b11", onSuccess: {
+            print("±±±±±1")
+            MimasManager.sharedInstance.api.sendAPNSToken()
+            self.showInfoAlert(message: "Успешно")
+        }, onError: { error in
+            print("±±±±±2 \(error)")
+            self.showInfoAlert(message: error)
+        })
+
 //        var userData = AuthUserData(secretKey: "WHnnVKWLfEvZ3") // 47
         var userData = AuthUserData(secretKey: "Wnw21$$nl!sdf") //43
         userData.login = "zzzz@zz.zz"
@@ -40,14 +49,14 @@ class ViewController: UIViewController {
             userData = authUserDataForTest!.authUserData!
         }
 
-        MimasManager.sharedInstance.api.login(authUserData: userData, onSuccess: {
-            print("±±±±±1")
-            MimasManager.sharedInstance.api.sendAPNSToken()
-            self.showInfoAlert(message: "Успешно")
-        }, onError: { error in
-            print("±±±±±2 \(error)")
-            self.showInfoAlert(message: error)
-        })
+//        MimasManager.sharedInstance.api.login(authUserData: userData, onSuccess: {
+//            print("±±±±±1")
+//            MimasManager.sharedInstance.api.sendAPNSToken()
+//            self.showInfoAlert(message: "Успешно")
+//        }, onError: { error in
+//            print("±±±±±2 \(error)")
+//            self.showInfoAlert(message: error)
+//        })
     }
     
     @IBAction func startTMKTitanAction(_ sender: Any) {
