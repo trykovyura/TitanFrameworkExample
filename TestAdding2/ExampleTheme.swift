@@ -85,7 +85,7 @@ class ExampleTheme: NSObject, TMKTheme {
     }
     
     func getDoctorUserpicImage() -> String {
-        return "userpic_doctor_orteka.png"
+        return "userpic_doctor.png"
     }
     
     func getColorForDutyDoctorTitle() -> UIColor {
@@ -105,7 +105,7 @@ class ExampleTheme: NSObject, TMKTheme {
     }
     
     func isShowMoney() -> Bool {
-        return false
+        return true
     }
     
     func getYandexMetricaId() -> String? {
@@ -117,16 +117,16 @@ class ExampleTheme: NSObject, TMKTheme {
     }
     
     func getPartnerId() -> String {
-        return "008" //43
+        return "033" //43
 //        return "077"
     }
     
     func isExternalAuthentication() -> Bool {
-        return true
+        return false
     }
     
     func isRequestRegistration() -> Bool {
-        return true
+        return false
     }
     
     func isHideDutyDoctors() -> Bool {
@@ -134,7 +134,7 @@ class ExampleTheme: NSObject, TMKTheme {
     }
     
     func isShowNavigationTabsWhenNotLoggedIn() -> Bool {
-        return false
+        return true
     }
     
     func isFamilySwitchedOn() -> Bool {

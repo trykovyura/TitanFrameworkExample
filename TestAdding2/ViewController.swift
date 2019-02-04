@@ -28,9 +28,9 @@ class ViewController: UIViewController {
     
     
     @IBAction func loginAction(_ sender: Any) {
-        MimasManager.sharedInstance.api.login(deviceId: "", token: "ee207e00-44a9-4605-af3f-053db4c11b11", onSuccess: {
+        TitanManager.sharedInstance.api.login(deviceId: "", token: "6a289787-ce12-4d90-94d3-077198d28122", onSuccess: {
             print("±±±±±1")
-            MimasManager.sharedInstance.api.sendAPNSToken()
+            TitanManager.sharedInstance.api.sendAPNSToken()
             self.showInfoAlert(message: "Успешно")
         }, onError: { error in
             print("±±±±±2 \(error)")
@@ -38,7 +38,10 @@ class ViewController: UIViewController {
         })
 
 //        var userData = AuthUserData(secretKey: "WHnnVKWLfEvZ3") // 47
-        var userData = AuthUserData(secretKey: "Wnw21$$nl!sdf") //43
+//        var userData = AuthUserData(secretKey: "Wnw21$$nl!sdf") //43
+//        var userData = AuthUserData(secretKey: "va4NhCYzgdEMa") // ренесанс лайф
+        var userData = AuthUserData(secretKey: "43xKw876TnbB0") // ренесанс
+
         userData.login = "zzzz@zz.zz"
         userData.password = "1234"
 //        userData.login = "+70000000000"
@@ -49,9 +52,9 @@ class ViewController: UIViewController {
             userData = authUserDataForTest!.authUserData!
         }
 
-//        MimasManager.sharedInstance.api.login(authUserData: userData, onSuccess: {
+//        TitanManager.sharedInstance.api.login(authUserData: userData, onSuccess: {
 //            print("±±±±±1")
-//            MimasManager.sharedInstance.api.sendAPNSToken()
+//            TitanManager.sharedInstance.api.sendAPNSToken()
 //            self.showInfoAlert(message: "Успешно")
 //        }, onError: { error in
 //            print("±±±±±2 \(error)")
@@ -69,10 +72,11 @@ class ViewController: UIViewController {
 //            self.showInfoAlert(message: error)
 //        })
         if let appointmentId = appointmentId.text {
-            MimasManager.sharedInstance.requestPermissions()
-            let chatVC = MimasManager.sharedInstance.getChatScreen(appointmentId)
+//            MimasManager.sharedInstance.requestPermissions()
+//            let chatVC = MimasManager.sharedInstance.getChatScreen(appointmentId)
+            let chatVC = TitanManager.sharedInstance.getStartScreen()
             print("openChatAction chatVC = \(chatVC)")
-            self.navigationController?.pushViewController(chatVC, animated: true)
+            self.navigationController?.pushViewController(chatVC!, animated: true)
         }
     }
     
