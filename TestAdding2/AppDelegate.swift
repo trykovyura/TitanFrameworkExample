@@ -36,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         BarButtonItemAppearance.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.clear], for: .normal)
         
         // Override point for customization after application launch.
-        TitanManager.sharedInstance.initialize(window, application, ExampleTheme(), true)
+        TitanManager.sharedInstance.initialize(window, application, ExampleTheme())
 //        MimasManager.sharedInstance.initPush()
 //        MimasManager.sharedInstance.delegate = self
 
