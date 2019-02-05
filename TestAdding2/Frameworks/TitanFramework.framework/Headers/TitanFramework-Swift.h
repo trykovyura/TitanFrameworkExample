@@ -217,6 +217,7 @@ SWIFT_CLASS("_TtC14TitanFramework21DepositViewController")
 @interface DepositViewController : UIViewController <UIWebViewDelegate>
 @property (nonatomic, weak) IBOutlet UIProgressView * _Null_unspecified progressView;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
