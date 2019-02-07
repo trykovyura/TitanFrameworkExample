@@ -178,4 +178,8 @@ class ExampleTheme: NSObject, TMKTheme {
     func getBoldFontName() -> String {
         return "FiraSans-Bold"
     }
+
+    func getEventServiceToken() -> String? {
+        return nil
+    }
 }

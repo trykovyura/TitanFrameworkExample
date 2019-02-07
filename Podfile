@@ -24,7 +24,7 @@ target 'TestAdding2' do
   pod 'FSCalendar'
   pod 'InputMask'
   pod 'UITextView+Placeholder'
-  pod 'AppsFlyerFramework', '~> 4.8.5'
+  pod 'Mixpanel-swift'
   pod 'YandexMobileMetrica', '~> 3.3.0'
   pod 'YandexMobileMetricaPush', '~> 0.7.0'
 end
