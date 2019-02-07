@@ -1,21 +1,18 @@
 PODS:
-  - AKMaskField (2.0.3)
   - Alamofire (4.7.3)
-  - AppsFlyerFramework (4.8.10)
-  - Charts (3.2.1):
-    - Charts/Core (= 3.2.1)
-  - Charts/Core (3.2.1)
   - Crashlytics (3.11.1):
     - Fabric (~> 1.8.1)
   - Fabric (1.8.2)
-  - FontBlaster (4.1.0)
+  - FontBlaster (4.0.1)
   - FSCalendar (2.8.0)
   - Gloss (2.0.1)
   - GoogleWebRTC (1.1.20621)
-  - HTTPLogger (0.2.0)
   - InputMask (4.0.1)
   - IQKeyboardManagerSwift (6.2.0)
   - MBProgressHUD (1.1.0)
+  - Mixpanel-swift (2.5.7):
+    - Mixpanel-swift/Complete (= 2.5.7)
+  - Mixpanel-swift/Complete (2.5.7)
   - ObjcExceptionBridging (1.0.1):
     - ObjcExceptionBridging/ObjcExceptionBridging (= 1.0.1)
   - ObjcExceptionBridging/ObjcExceptionBridging (1.0.1)
@@ -46,24 +43,20 @@ PODS:
     - YandexMobileMetrica (~> 3.0)
 
 DEPENDENCIES:
-  - AKMaskField
   - Alamofire (~> 4.4)
-  - AppsFlyerFramework (~> 4.8.5)
-  - Charts (= 3.2.1)
   - Crashlytics
-  - Fabric
-  - FontBlaster (= 4.1.0)
+  - FontBlaster (= 4.0.1)
   - FSCalendar
   - Gloss (~> 2.0)
   - GoogleWebRTC (= 1.1.20621)
-  - HTTPLogger
   - InputMask
   - IQKeyboardManagerSwift
   - MBProgressHUD (~> 1.1.0)
+  - Mixpanel-swift
   - RxAlamofire
   - RxCocoa (~> 4.3.0)
   - SnapKit (~> 4.2.0)
-  - SwiftDate (~> 5.0.10)
+  - SwiftDate (~> 5.0.13)
   - "UITextView+Placeholder"
   - Validator (~> 3.1.1)
   - XCGLogger (~> 6.1.0)
@@ -72,20 +65,17 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - AKMaskField
     - Alamofire
-    - AppsFlyerFramework
-    - Charts
     - Crashlytics
     - Fabric
     - FontBlaster
     - FSCalendar
     - Gloss
     - GoogleWebRTC
-    - HTTPLogger
     - InputMask
     - IQKeyboardManagerSwift
     - MBProgressHUD
+    - Mixpanel-swift
     - ObjcExceptionBridging
     - RxAlamofire
     - RxAtomic
@@ -100,20 +90,17 @@ SPEC REPOS:
     - YandexMobileMetricaPush
 
 SPEC CHECKSUMS:
-  AKMaskField: b6d147524813e62cd3f15475fa2200ce7a3d2620
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
-  AppsFlyerFramework: 481eafa4f92e3274fa8d04f10108cdad83fd532b
-  Charts: f122fb70b19847fa5817d018b77d6c5a2296ab25
   Crashlytics: ca7ab4bc304aa216bdc2e4c1a96389ee77252203
   Fabric: d2b22f443ba195d8a7cc204da230977c72733b40
-  FontBlaster: 127aa66419478d1c62926c7fdb39841633344a45
+  FontBlaster: 84229df8e3a7a6dacb190565bc543747a0c323f9
   FSCalendar: 3a5ed3636e2ba1b83ebebfcf0c2603105a6f5efe
   Gloss: 1e8743f8de1fbe14a97f220ff901cba91ae5f8f8
   GoogleWebRTC: bdc7453b450d0970aee538b1297f670d7234a0b1
-  HTTPLogger: 399eb29cc2f9e7e9699adaff8bd70bdc9c315798
   InputMask: 2eb0dd868885f5ba061db2640db0b17265bb95eb
   IQKeyboardManagerSwift: b07ccf9d8cafe993dcd6cb794eb4ba34611a0c4e
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  Mixpanel-swift: d4de197db883e9dbba162fee6751db5e7766971b
   ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
   RxAlamofire: 09624d0f2d48ed8b686e4eb4cf68e28cbd2df556
   RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
@@ -127,6 +114,6 @@ SPEC CHECKSUMS:
   YandexMobileMetrica: 415e4e8a7a23121a3d086958a655f444dd340edb
   YandexMobileMetricaPush: 43d7c6bbaeee637418a8d3c287af93df1fb512d5
 
-PODFILE CHECKSUM: c69622daccc98d18a517075e0c30d0cf5c74df8a
+PODFILE CHECKSUM: 1b0cb61488b89c8009fd31341ea7e088c851f9c4
 
 COCOAPODS: 1.5.3
