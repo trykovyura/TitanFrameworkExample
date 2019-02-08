@@ -28,9 +28,9 @@ class ViewController: UIViewController {
     
     
     @IBAction func loginAction(_ sender: Any) {
-        TitanManager.sharedInstance.api.login(deviceId: "", token: "6a289787-ce12-4d90-94d3-077198d28122", onSuccess: {
+        MimasManager.sharedInstance.api.login(deviceId: "", token: "6e6c7937-4f4d-4f0b-9799-169d619b51fb", onSuccess: {
             print("±±±±±1")
-            TitanManager.sharedInstance.api.sendAPNSToken()
+            MimasManager.sharedInstance.api.sendAPNSToken()
             self.showInfoAlert(message: "Успешно")
         }, onError: { error in
             print("±±±±±2 \(error)")
@@ -72,11 +72,11 @@ class ViewController: UIViewController {
 //            self.showInfoAlert(message: error)
 //        })
         if let appointmentId = appointmentId.text {
-//            MimasManager.sharedInstance.requestPermissions()
-//            let chatVC = MimasManager.sharedInstance.getChatScreen(appointmentId)
-            let chatVC = TitanManager.sharedInstance.getStartScreen()
+            MimasManager.sharedInstance.requestPermissions()
+            let chatVC = MimasManager.sharedInstance.getChatScreen(appointmentId)
+//            let chatVC = TitanManager.sharedInstance.getStartScreen()
             print("openChatAction chatVC = \(chatVC)")
-            self.navigationController?.pushViewController(chatVC!, animated: true)
+            self.navigationController?.pushViewController(chatVC, animated: true)
         }
     }
     
