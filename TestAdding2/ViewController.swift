@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         userDataTextView.placeholder = "{\"deviceType\":\"IOS\",\"login\":\"zzz@zz.zz\",\"password\":\"1234\"}"
+        
+        TitanManager.sharedInstance.setRootViewController(self)
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -28,15 +30,6 @@ class ViewController: UIViewController {
     
     
     @IBAction func loginAction(_ sender: Any) {
-        MimasManager.sharedInstance.api.login(deviceId: "", token: "6e6c7937-4f4d-4f0b-9799-169d619b51fb", onSuccess: {
-            print("±±±±±1")
-            MimasManager.sharedInstance.api.sendAPNSToken()
-            self.showInfoAlert(message: "Успешно")
-        }, onError: { error in
-            print("±±±±±2 \(error)")
-            self.showInfoAlert(message: error)
-        })
-
 //        var userData = AuthUserData(secretKey: "WHnnVKWLfEvZ3") // 47
 //        var userData = AuthUserData(secretKey: "Wnw21$$nl!sdf") //43
 //        var userData = AuthUserData(secretKey: "va4NhCYzgdEMa") // ренесанс лайф
@@ -52,14 +45,14 @@ class ViewController: UIViewController {
             userData = authUserDataForTest!.authUserData!
         }
 
-//        TitanManager.sharedInstance.api.login(authUserData: userData, onSuccess: {
-//            print("±±±±±1")
-//            TitanManager.sharedInstance.api.sendAPNSToken()
-//            self.showInfoAlert(message: "Успешно")
-//        }, onError: { error in
-//            print("±±±±±2 \(error)")
-//            self.showInfoAlert(message: error)
-//        })
+        TitanManager.sharedInstance.api.login(authUserData: userData, onSuccess: {
+            print("±±±±±1")
+            TitanManager.sharedInstance.api.sendAPNSToken()
+            self.showInfoAlert(message: "Успешно")
+        }, onError: { error in
+            print("±±±±±2 \(error)")
+            self.showInfoAlert(message: error)
+        })
     }
     
     @IBAction func startTMKTitanAction(_ sender: Any) {
@@ -72,11 +65,11 @@ class ViewController: UIViewController {
 //            self.showInfoAlert(message: error)
 //        })
         if let appointmentId = appointmentId.text {
-            MimasManager.sharedInstance.requestPermissions()
-            let chatVC = MimasManager.sharedInstance.getChatScreen(appointmentId)
-//            let chatVC = TitanManager.sharedInstance.getStartScreen()
+//            MimasManager.sharedInstance.requestPermissions()
+//            let chatVC = MimasManager.sharedInstance.getChatScreen(appointmentId)
+            let chatVC = TitanManager.sharedInstance.getStartScreen()
             print("openChatAction chatVC = \(chatVC)")
-            self.navigationController?.pushViewController(chatVC, animated: true)
+            self.navigationController?.pushViewController(chatVC!, animated: true)
         }
     }
     
