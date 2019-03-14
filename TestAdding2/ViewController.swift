@@ -35,7 +35,7 @@ class ViewController: UIViewController {
 //        var userData = AuthUserData(secretKey: "va4NhCYzgdEMa") // ренесанс лайф
         var userData = AuthUserData(secretKey: "43xKw876TnbB0") // ренесанс
 
-        userData.login = "zzzz@zz.zz"
+        userData.login = "azza@zz.zz"
         userData.password = "1234"
 //        userData.login = "+70000000000"
 //        userData.password = "qwerty"
@@ -45,9 +45,9 @@ class ViewController: UIViewController {
             userData = authUserDataForTest!.authUserData!
         }
 
-        TitanManager.sharedInstance.api.login(authUserData: userData, onSuccess: {
+        MimasManager.sharedInstance.api.login(authUserData: userData, onSuccess: {
             print("±±±±±1")
-            TitanManager.sharedInstance.api.sendAPNSToken()
+            MimasManager.sharedInstance.api.sendAPNSToken()
             self.showInfoAlert(message: "Успешно")
         }, onError: { error in
             print("±±±±±2 \(error)")
@@ -65,11 +65,11 @@ class ViewController: UIViewController {
 //            self.showInfoAlert(message: error)
 //        })
         if let appointmentId = appointmentId.text {
-//            MimasManager.sharedInstance.requestPermissions()
-//            let chatVC = MimasManager.sharedInstance.getChatScreen(appointmentId)
-            let chatVC = TitanManager.sharedInstance.getStartScreen()
+            MimasManager.sharedInstance.requestPermissions()
+            let chatVC = MimasManager.sharedInstance.getChatScreen(appointmentId)
+//            let chatVC = TitanManager.sharedInstance.getStartScreen()
             print("openChatAction chatVC = \(chatVC)")
-            self.navigationController?.pushViewController(chatVC!, animated: true)
+            self.navigationController?.pushViewController(chatVC, animated: true)
         }
     }
     
