@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func loginAction(_ sender: Any) {
-        MimasManager.sharedInstance.api.login(deviceId: "", token: "ee207e00-44a9-4605-af3f-053db4c11b11", onSuccess: {
+        MimasManager.sharedInstance.api.login(token: "ee207e00-44a9-4605-af3f-053db4c11b11", onSuccess: {
             print("±±±±±1")
             MimasManager.sharedInstance.api.sendAPNSToken()
             self.showInfoAlert(message: "Успешно")
