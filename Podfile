@@ -9,10 +9,10 @@ target 'TestAdding2' do
 
   pod 'GoogleWebRTC', '1.1.20621'
   pod 'Alamofire', '~> 4.4'
-  pod 'RxAlamofire'
+  pod 'RxAlamofire', '~> 4.3.0'
   pod 'RxCocoa', '~> 4.3.0'
   pod 'Gloss', '~> 2.0'
-  pod 'Crashlytics'
+  pod 'Crashlytics', '~> 3.11.1'
   pod 'XCGLogger', '~> 6.1.0'
   pod 'SwiftDate', '~> 5.0.13'
   pod 'FontBlaster', '4.0.1'
@@ -20,13 +20,13 @@ target 'TestAdding2' do
   pod 'Validator', '~> 3.1.1'
   pod 'MBProgressHUD', '~> 1.1.0'
   pod 'IQKeyboardManagerSwift'
-
-  pod 'FSCalendar'
-  pod 'InputMask'
-  pod 'UITextView+Placeholder'
-  pod 'Mixpanel-swift'
+  pod 'FSCalendar', '~> 2.8.0'
+  pod 'InputMask', '~> 4.0.1'
+  pod 'UITextView+Placeholder', '~> 1.2.1'
+  pod 'Mixpanel-swift', '~> 2.5.6'
   pod 'YandexMobileMetrica', '~> 3.3.0'
   pod 'YandexMobileMetricaPush', '~> 0.7.0'
+
 end
 
 

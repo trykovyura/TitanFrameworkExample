@@ -44,20 +44,20 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 4.4)
-  - Crashlytics
+  - Crashlytics (~> 3.11.1)
   - FontBlaster (= 4.0.1)
-  - FSCalendar
+  - FSCalendar (~> 2.8.0)
   - Gloss (~> 2.0)
   - GoogleWebRTC (= 1.1.20621)
-  - InputMask
+  - InputMask (~> 4.0.1)
   - IQKeyboardManagerSwift
   - MBProgressHUD (~> 1.1.0)
-  - Mixpanel-swift
-  - RxAlamofire
+  - Mixpanel-swift (~> 2.5.6)
+  - RxAlamofire (~> 4.3.0)
   - RxCocoa (~> 4.3.0)
   - SnapKit (~> 4.2.0)
   - SwiftDate (~> 5.0.13)
-  - "UITextView+Placeholder"
+  - "UITextView+Placeholder (~> 1.2.1)"
   - Validator (~> 3.1.1)
   - XCGLogger (~> 6.1.0)
   - YandexMobileMetrica (~> 3.3.0)
@@ -114,6 +114,6 @@ SPEC CHECKSUMS:
   YandexMobileMetrica: 415e4e8a7a23121a3d086958a655f444dd340edb
   YandexMobileMetricaPush: 43d7c6bbaeee637418a8d3c287af93df1fb512d5
 
-PODFILE CHECKSUM: 1b0cb61488b89c8009fd31341ea7e088c851f9c4
+PODFILE CHECKSUM: 38f6d7c4f2d4cd34092ea63f970d551433e1a697
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1
