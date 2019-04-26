@@ -85,7 +85,7 @@ class ExampleTheme: NSObject, TMKTheme {
     }
     
     func getDoctorUserpicImage() -> String {
-        return "userpic_doctor_orteka.png"
+        return "userpic_doctor.png"
     }
     
     func getColorForDutyDoctorTitle() -> UIColor {
@@ -117,7 +117,7 @@ class ExampleTheme: NSObject, TMKTheme {
     }
     
     func getPartnerId() -> String {
-        return "008" //43
+        return "047" //43
 //        return "077"
     }
     

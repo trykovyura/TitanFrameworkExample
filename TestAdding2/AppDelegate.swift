@@ -33,9 +33,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Fabric.with([Crashlytics.self])
         
         // Override point for customization after application launch.
-        MimasManager.sharedInstance.initialize(window, application, ExampleTheme())
-        MimasManager.sharedInstance.initPush()
-        MimasManager.sharedInstance.delegate = self
+        TitanManager.sharedInstance.initialize(window, application, ExampleTheme())
+//        TitanManager.sharedInstance.initPush()
+//        TitanManager.sharedInstance.delegate = self
 
         if #available(iOS 10.0, *) {
             let center = UNUserNotificationCenter.current()
@@ -108,19 +108,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, didReceive notification: UILocalNotification) {
-        MimasManager.sharedInstance.processCallStartNotification(notification)
+//        MimasManager.sharedInstance.processCallStartNotification(notification)
     }
     
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        MimasManager.sharedInstance.initializeYandexMetrica(deviceToken)
+//        MimasManager.sharedInstance.initializeYandexMetrica(deviceToken)
     }
     
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any]) {
-        MimasManager.sharedInstance.handlePushNotification(userInfo)
+//        MimasManager.sharedInstance.handlePushNotification(userInfo)
     }
     
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-        MimasManager.sharedInstance.handlePushNotification(userInfo)
+//        MimasManager.sharedInstance.handlePushNotification(userInfo)
         completionHandler(.newData)
     }
 }
@@ -130,7 +130,7 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
     @available(iOS 10.0, *)
     public func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         log2.debug(" >>>>>>> didReceive <<<<<<< ")
-        MimasManager.sharedInstance.processUserNotification(response: response, completionHandler: completionHandler)
+//        TitanManager.sharedInstance.processUserNotification(response: response, completionHandler: completionHandler)
     }
 }
 
@@ -138,7 +138,7 @@ extension AppDelegate: PKPushRegistryDelegate {
     public func pushRegistry(_ registry: PKPushRegistry, didUpdate pushCredentials: PKPushCredentials, for type: PKPushType) {
         log2.debug(" <><><> 1")
         let voipToken = pushCredentials.token.map { String(format: "%02.2hhx", $0) }.joined()
-        MimasManager.sharedInstance.api.sendAPNSToken(voipToken)
+        TitanManager.sharedInstance.api.sendAPNSToken(voipToken)
         log2.debug("voip token: \(voipToken)")
     }
 
@@ -146,14 +146,14 @@ extension AppDelegate: PKPushRegistryDelegate {
         log2.debug(" <><><> 2")
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let startViewController = storyboard.instantiateInitialViewController()
-        MimasManager.sharedInstance.setRootViewController(startViewController!)
+        TitanManager.sharedInstance.setRootViewController(startViewController!)
     }
 
     public func pushRegistry(_ registry: PKPushRegistry, didReceiveIncomingPushWith payload: PKPushPayload, for type: PKPushType, completion: @escaping () -> Void) {
         log2.debug(" <><><> 3")
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let startViewController = storyboard.instantiateInitialViewController()
-        MimasManager.sharedInstance.setRootViewController(startViewController!)
+        TitanManager.sharedInstance.setRootViewController(startViewController!)
     }
 
     public func pushRegistry(_ registry: PKPushRegistry, didInvalidatePushTokenFor type: PKPushType) {
