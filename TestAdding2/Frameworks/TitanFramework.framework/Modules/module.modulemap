@@ -4,8 +4,3 @@ framework module TitanFramework {
   export *
   module * { export * }
 }
-
-module TitanFramework.Swift {
-    header "TitanFramework-Swift.h"
-    requires objc
-}
