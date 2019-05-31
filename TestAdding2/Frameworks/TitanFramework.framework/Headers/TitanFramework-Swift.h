@@ -538,6 +538,8 @@ SWIFT_CLASS("_TtC14TitanFramework12TitanManager")
 
 
 
+
+
 SWIFT_CLASS("_TtC14TitanFramework9WebSocket")
 @interface WebSocket : NSObject <NSStreamDelegate>
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -1076,6 +1078,8 @@ SWIFT_CLASS("_TtC14TitanFramework12TitanManager")
 @property (nonatomic, readonly) BOOL shouldAutorotate;
 @property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
 @end
+
+
 
 
 
