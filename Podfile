@@ -7,7 +7,7 @@ target 'TestAdding2' do
 
   # Pods for TestAdding2
 
-  pod 'GoogleWebRTC', '1.1.20621'
+  pod 'GoogleWebRTC', '~> 1.1'
   pod 'Alamofire', '~> 4.4'
   pod 'RxAlamofire', '~> 4.3.0'
   pod 'RxCocoa', '~> 4.3.0'
@@ -24,8 +24,6 @@ target 'TestAdding2' do
   pod 'InputMask', '~> 4.0.1'
   pod 'UITextView+Placeholder', '~> 1.2.1'
   pod 'Mixpanel-swift', '~> 2.5.6'
-  pod 'YandexMobileMetrica', '~> 3.3.0'
-  pod 'YandexMobileMetricaPush', '~> 0.7.0'
 
 end
 

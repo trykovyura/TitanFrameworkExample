@@ -422,10 +422,10 @@ SWIFT_CLASS("_TtC14TitanFramework16TMKEAGLVideoView")
 
 
 
-@class RTCEAGLVideoView;
+@protocol RTCVideoRenderer;
 
-@interface TMKEAGLVideoView (SWIFT_EXTENSION(TitanFramework)) <RTCEAGLVideoViewDelegate>
-- (void)videoView:(RTCEAGLVideoView * _Nonnull)videoView didChangeVideoSize:(CGSize)size;
+@interface TMKEAGLVideoView (SWIFT_EXTENSION(TitanFramework)) <RTCVideoViewDelegate>
+- (void)videoView:(id <RTCVideoRenderer> _Nonnull)videoView didChangeVideoSize:(CGSize)size;
 @end
 
 
@@ -526,6 +526,8 @@ SWIFT_CLASS("_TtC14TitanFramework12TitanManager")
 @property (nonatomic, readonly) BOOL shouldAutorotate;
 @property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
 @end
+
+
 
 
 
@@ -974,10 +976,10 @@ SWIFT_CLASS("_TtC14TitanFramework16TMKEAGLVideoView")
 
 
 
-@class RTCEAGLVideoView;
+@protocol RTCVideoRenderer;
 
-@interface TMKEAGLVideoView (SWIFT_EXTENSION(TitanFramework)) <RTCEAGLVideoViewDelegate>
-- (void)videoView:(RTCEAGLVideoView * _Nonnull)videoView didChangeVideoSize:(CGSize)size;
+@interface TMKEAGLVideoView (SWIFT_EXTENSION(TitanFramework)) <RTCVideoViewDelegate>
+- (void)videoView:(id <RTCVideoRenderer> _Nonnull)videoView didChangeVideoSize:(CGSize)size;
 @end
 
 
@@ -1078,6 +1080,8 @@ SWIFT_CLASS("_TtC14TitanFramework12TitanManager")
 @property (nonatomic, readonly) BOOL shouldAutorotate;
 @property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
 @end
+
+
 
 
 
