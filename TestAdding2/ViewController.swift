@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         userDataTextView.placeholder = "{\"deviceType\":\"IOS\",\"login\":\"zzz@zz.zz\",\"password\":\"1234\"}"
         
-        TitanManager.sharedInstance.setRootViewController(self)
+        MimasManager.sharedInstance.setRootViewController(self)
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -30,22 +30,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func loginAction(_ sender: Any) {
-//        var userData = AuthUserData(secretKey: "WHnnVKWLfEvZ3") // 47
-//        var userData = AuthUserData(secretKey: "Wnw21$$nl!sdf") //43
-//        var userData = AuthUserData(secretKey: "va4NhCYzgdEMa") // ренесанс лайф
-        var userData = AuthUserData(secretKey: "43xKw876TnbB0") // ренесанс
-
-        userData.login = "azza@zz.zz"
-        userData.password = "1234"
-//        userData.login = "+70000000000"
-//        userData.password = "qwerty"
-
-        if let jsonString = userDataTextView.text, userDataTextView.text != "" {
-            let authUserDataForTest = AuthUserDataForTest(json: convertToDictionary(text: jsonString)!)
-            userData = authUserDataForTest!.authUserData!
-        }
-
-        MimasManager.sharedInstance.api.login(authUserData: userData, onSuccess: {
+        MimasManager.sharedInstance.api.login(token: "325859d2-af32-4579-81f0-e5fda43827a8", onSuccess: {
             print("±±±±±1")
             MimasManager.sharedInstance.api.sendAPNSToken()
             self.showInfoAlert(message: "Успешно")
@@ -57,20 +42,24 @@ class ViewController: UIViewController {
     
     @IBAction func startTMKTitanAction(_ sender: Any) {
         print("openChatAction")
-//        MimasManager.sharedInstance.api.getAppointmentsByStates(states: [TMKAppointmentState.active, TMKAppointmentState.scheduled], onSuccess: { items in
-//            print("±±±±±1")
-//            self.showInfoAlert(message: "Загружено")
-//        }, onError: { error in
-//            print("±±±±±2 \(error)")
-//            self.showInfoAlert(message: error)
-//        })
-        if let appointmentId = appointmentId.text {
-            MimasManager.sharedInstance.requestPermissions()
-            let chatVC = MimasManager.sharedInstance.getChatScreen(appointmentId)
-//            let chatVC = TitanManager.sharedInstance.getStartScreen()
-            print("openChatAction chatVC = \(chatVC)")
-            self.navigationController?.pushViewController(chatVC, animated: true)
-        }
+        MimasManager.sharedInstance.api.getAppointmentsByStates(states: [TMKAppointmentState.active, TMKAppointmentState.scheduled], onSuccess: { items in
+            print("±±±±±1")
+            print("loaded appointments")
+            for item in items {
+                print("appointmentId = \(item.id)")
+            }
+            if (items.count > 0) {
+                let appointmentId = items[0].id 
+                print("appointmentId for chat = \(appointmentId)")
+                MimasManager.sharedInstance.requestPermissions()
+                let chatVC = MimasManager.sharedInstance.getChatScreen(appointmentId)
+                print("openChatAction chatVC = \(chatVC)")
+                self.navigationController?.pushViewController(chatVC, animated: true)
+            }
+        }, onError: { error in
+            print("±±±±±2 \(error)")
+            self.showInfoAlert(message: error)
+        })
     }
     
     private func convertToDictionary(text: String) -> [String: Any]? {

@@ -182,4 +182,8 @@ class ExampleTheme: NSObject, TMKTheme {
     func getEventServiceToken() -> String? {
         return nil
     }
+    
+    func isShowMainTabBar() -> Bool {
+        return true
+    }
 }

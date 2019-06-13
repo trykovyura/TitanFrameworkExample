@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,27 +24,10 @@
 		0A42829720E0EA320092C957 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A42829520E0EA320092C957 /* LaunchScreen.storyboard */; };
 		0A4282A320E0ED220092C957 /* ExampleTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4282A220E0ED210092C957 /* ExampleTheme.swift */; };
 		0A4282A620E0ED2B0092C957 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A4282A420E0ED2B0092C957 /* Localizable.strings */; };
-		0AC53F6C21773E8400387A09 /* TitanFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC53F6B21773E8400387A09 /* TitanFramework.framework */; };
-		0AC53F6D21773E9100387A09 /* TitanFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC53F6B21773E8400387A09 /* TitanFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		FD6176EF4E621A4A5A3971EB /* Pods_TestAdding2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75BFABA1E7A53CDFCD719948 /* Pods_TestAdding2.framework */; };
+		C67AB4EAAB5097B3BB915CFC /* Pods_TestAdding2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCB08D27B32D01C9A7AF39C1 /* Pods_TestAdding2.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		0A014DD820E218FA002B5694 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				0AC53F6D21773E9100387A09 /* TitanFramework.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		05F8BD537DBEA7A01D4D827C /* Pods-TestAdding2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAdding2.debug.xcconfig"; path = "Target Support Files/Pods-TestAdding2/Pods-TestAdding2.debug.xcconfig"; sourceTree = "<group>"; };
 		0A014DE620E2DE15002B5694 /* ImagesDrclinics.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ImagesDrclinics.xcassets; sourceTree = "<group>"; };
 		0A014DE720E2DE15002B5694 /* LaunchScreenDrclinics.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreenDrclinics.storyboard; sourceTree = "<group>"; };
 		0A014DE820E2DE15002B5694 /* logoDrclinics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoDrclinics.png; sourceTree = "<group>"; };
@@ -65,9 +48,9 @@
 		0A42829820E0EA320092C957 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A4282A220E0ED210092C957 /* ExampleTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTheme.swift; sourceTree = "<group>"; };
 		0A4282A520E0ED2B0092C957 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
-		0AC53F6B21773E8400387A09 /* TitanFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TitanFramework.framework; path = TestAdding2/Frameworks/TitanFramework.framework; sourceTree = "<group>"; };
-		3E5A14E85A57330D1EA947D6 /* Pods-TestAdding2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAdding2.release.xcconfig"; path = "Target Support Files/Pods-TestAdding2/Pods-TestAdding2.release.xcconfig"; sourceTree = "<group>"; };
-		75BFABA1E7A53CDFCD719948 /* Pods_TestAdding2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestAdding2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2959233C660B1E6A5A06B298 /* Pods-TestAdding2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAdding2.debug.xcconfig"; path = "Target Support Files/Pods-TestAdding2/Pods-TestAdding2.debug.xcconfig"; sourceTree = "<group>"; };
+		7C39FEADCD70CD1D5804F6AF /* Pods-TestAdding2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAdding2.release.xcconfig"; path = "Target Support Files/Pods-TestAdding2/Pods-TestAdding2.release.xcconfig"; sourceTree = "<group>"; };
+		CCB08D27B32D01C9A7AF39C1 /* Pods_TestAdding2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestAdding2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AC53F6C21773E8400387A09 /* TitanFramework.framework in Frameworks */,
-				FD6176EF4E621A4A5A3971EB /* Pods_TestAdding2.framework in Frameworks */,
+				C67AB4EAAB5097B3BB915CFC /* Pods_TestAdding2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,8 +86,8 @@
 			children = (
 				0A42828B20E0EA2F0092C957 /* TestAdding2 */,
 				0A42828A20E0EA2F0092C957 /* Products */,
-				3972DFF1B2C298433DF712CF /* Frameworks */,
-				A57519B75EEB418F0CCFD69E /* Pods */,
+				FC53018B9EF23464199A809B /* Pods */,
+				1906297E2E75619CFEFF6EED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,22 +117,20 @@
 			path = TestAdding2;
 			sourceTree = "<group>";
 		};
-		3972DFF1B2C298433DF712CF /* Frameworks */ = {
+		1906297E2E75619CFEFF6EED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0AC53F6B21773E8400387A09 /* TitanFramework.framework */,
-				75BFABA1E7A53CDFCD719948 /* Pods_TestAdding2.framework */,
+				CCB08D27B32D01C9A7AF39C1 /* Pods_TestAdding2.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A57519B75EEB418F0CCFD69E /* Pods */ = {
+		FC53018B9EF23464199A809B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				05F8BD537DBEA7A01D4D827C /* Pods-TestAdding2.debug.xcconfig */,
-				3E5A14E85A57330D1EA947D6 /* Pods-TestAdding2.release.xcconfig */,
+				2959233C660B1E6A5A06B298 /* Pods-TestAdding2.debug.xcconfig */,
+				7C39FEADCD70CD1D5804F6AF /* Pods-TestAdding2.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -161,13 +141,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A42829B20E0EA320092C957 /* Build configuration list for PBXNativeTarget "TestAdding2" */;
 			buildPhases = (
-				52A06F26F04B088C3B633F48 /* [CP] Check Pods Manifest.lock */,
+				7242A5CDEF6EF97DB6CC362F /* [CP] Check Pods Manifest.lock */,
 				0A42828520E0EA2F0092C957 /* Sources */,
 				0A42828620E0EA2F0092C957 /* Frameworks */,
 				0A42828720E0EA2F0092C957 /* Resources */,
-				0A014DD820E218FA002B5694 /* Embed Frameworks */,
 				0A676BE021BA7C6F00955DDA /* ShellScript */,
-				C55BC289098E4E03F2764289 /* [CP] Embed Pods Frameworks */,
+				93EC820BDB15BA2B7D439C1A /* [CP] Embed Pods Frameworks */,
+				0EE50162D452CF4E9C99476F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -262,7 +242,24 @@
 			shellPath = /bin/sh;
 			shellScript = "echo \"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\"\n\"${PODS_ROOT}/Fabric/run\" 9c855a3c916c6717f9b6d54fa1f4eebbac0dedfe a8e97557949524244c54532bd3548ba62b92c13da0c866da5123c7ae961e390f\n";
 		};
-		52A06F26F04B088C3B633F48 /* [CP] Check Pods Manifest.lock */ = {
+		0EE50162D452CF4E9C99476F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestAdding2/Pods-TestAdding2-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestAdding2/Pods-TestAdding2-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestAdding2/Pods-TestAdding2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7242A5CDEF6EF97DB6CC362F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -284,58 +281,17 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C55BC289098E4E03F2764289 /* [CP] Embed Pods Frameworks */ = {
+		93EC820BDB15BA2B7D439C1A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TestAdding2/Pods-TestAdding2-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
-				"${BUILT_PRODUCTS_DIR}/FontBlaster/FontBlaster.framework",
-				"${BUILT_PRODUCTS_DIR}/Gloss/Gloss.framework",
-				"${PODS_ROOT}/GoogleWebRTC/Frameworks/frameworks/WebRTC.framework",
-				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/InputMask/InputMask.framework",
-				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/Mixpanel-swift/Mixpanel.framework",
-				"${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging/ObjcExceptionBridging.framework",
-				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
-				"${BUILT_PRODUCTS_DIR}/UITextView+Placeholder/UITextView_Placeholder.framework",
-				"${BUILT_PRODUCTS_DIR}/Validator/Validator.framework",
-				"${BUILT_PRODUCTS_DIR}/XCGLogger/XCGLogger.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-TestAdding2/Pods-TestAdding2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontBlaster.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Gloss.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InputMask.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mixpanel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjcExceptionBridging.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UITextView_Placeholder.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Validator.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCGLogger.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-TestAdding2/Pods-TestAdding2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -509,7 +465,7 @@
 		};
 		0A42829C20E0EA320092C957 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 05F8BD537DBEA7A01D4D827C /* Pods-TestAdding2.debug.xcconfig */;
+			baseConfigurationReference = 2959233C660B1E6A5A06B298 /* Pods-TestAdding2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -533,6 +489,26 @@
 					"@loader_path/../Frameworks",
 				);
 				MACH_O_TYPE = mh_execute;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ObjcExceptionBridging\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"TitanFramework\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.medlinesoft.TestAdding2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = "${SRCROOT}/TestAdding2";
@@ -546,7 +522,7 @@
 		};
 		0A42829D20E0EA320092C957 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E5A14E85A57330D1EA947D6 /* Pods-TestAdding2.release.xcconfig */;
+			baseConfigurationReference = 7C39FEADCD70CD1D5804F6AF /* Pods-TestAdding2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -570,6 +546,26 @@
 					"@loader_path/../Frameworks",
 				);
 				MACH_O_TYPE = mh_execute;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ObjcExceptionBridging\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"TitanFramework\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.medlinesoft.TestAdding2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = "${SRCROOT}/TestAdding2";

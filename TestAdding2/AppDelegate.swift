@@ -112,11 +112,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didReceive notification: UILocalNotification) {
         MimasManager.sharedInstance.processCallStartNotification(notification)
-    }
-    
-    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        MimasManager.sharedInstance.initializeYandexMetrica(deviceToken)
-    }
+    }        
     
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any]) {
         MimasManager.sharedInstance.handlePushNotification(userInfo)
