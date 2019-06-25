@@ -1,19 +1,69 @@
 # Uncomment the next line to define a global platform for your project
- platform :ios, '9.0'
+ platform :ios, '11.0'
  source 'https://github.com/CocoaPods/Specs.git'
+ use_frameworks!
 
-target 'TestAdding2' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
+ abstract_target 'Renhealth' do
+   # Utils
+   pod 'SwiftLint', '~> 0.30.1'
+   pod 'R.swift', '~> 5.0.2'
+   pod 'Swinject', '~> 2.5.0'
+   pod 'SwiftDate', '~> 5.0.13'
 
-  # Pods for TestAdding2
-  pod 'TitanFramework', '1.4.9-dev'
+   # UI
+   pod 'MaterialComponents/TextFields', '~> 77.0.0'
+   pod 'MaterialComponents/TextFields+ColorThemer', '~> 77.0.0'
+   pod 'MaterialComponents/TextFields+TypographyThemer', '~> 77.0.0'
+   pod 'MaterialComponents/PageControl', '~> 77.0.0'
+   pod 'lottie-ios', '~> 2.5.2'
+   pod 'NotificationBannerSwift', '~> 2.0.1'
+   pod 'SVProgressHUD', '~> 2.2.5'
+   pod 'SnapKit', '~> 4.2.0'
+   pod 'Kingfisher', '~> 5.3.1'
+   pod 'Validator', '~> 3.1.1'
+   pod 'IGListKit', '~> 3.4.0'
+   pod 'SwiftRichString', '~> 2.1.0'
+   pod 'SkeletonView', '~> 1.4.2'
+   pod 'IQKeyboardManagerSwift', '~> 6.4.0'
+   pod 'DrawerKit', '~> 0.7.0'
 
-end
+   # Map
+   pod 'GoogleMaps', '~> 2.7.0'
+
+   # Storage
+   pod 'KeychainAccess', '~> 3.1.2'
+
+   # Network
+   pod 'Moya/RxSwift', '~> 12.0.1'
+
+   # Analytics
+   pod 'Fabric', '~> 1.9.0'
+   pod 'Firebase/Core', '~> 5.2.0'
+   pod 'Crashlytics', '~> 3.12.0'
+   pod 'GoogleTagManager', '~> 7.0.0'
+
+   # Rx
+   pod 'RxSwift',  '~> 4.0'
+   pod 'RxCocoa',  '~> 4.0'
+   pod 'RxDataSources',  '~> 3.0'
+   pod 'RxOptional', '~> 3.6.2'
+   pod 'NSObject+Rx',  '~> 4.4.1'
+   pod 'RxSwiftExt', '~> 3.4.0'
+   pod 'RxMediaPicker', :git => 'https://github.com/MasterWatcher/RxMediaPicker'
+   pod 'RxBiBinding', '~> 0.1.7'
+   pod 'RxAtomic', '~> 4.4.2'
+   pod 'RxFlow', '~> 2.2.0'
+   pod 'RxCoreLocation', '~> 1.3.2'
+
+   # Pods for TestAdding2
+   pod 'TitanFramework', '1.4.9-dev'
+
+   target 'TestAdding2'
+ end
 
 post_install do |installer|
   
-    auto_process_target(['TestAdding2'], 'TestAdding2', installer)
+    auto_process_target(['TestAdding2'], 'Renhealth-TestAdding2', installer)
   
 end
 

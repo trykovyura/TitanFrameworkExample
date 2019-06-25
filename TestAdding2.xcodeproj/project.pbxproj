@@ -24,8 +24,7 @@
 		0A42829720E0EA320092C957 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A42829520E0EA320092C957 /* LaunchScreen.storyboard */; };
 		0A4282A320E0ED220092C957 /* ExampleTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4282A220E0ED210092C957 /* ExampleTheme.swift */; };
 		0A4282A620E0ED2B0092C957 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A4282A420E0ED2B0092C957 /* Localizable.strings */; };
-		44DC8F77722AAF4A4BAFCEEA /* Pods_TestAdding2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FFC9A9387E77A68C5CADB06 /* Pods_TestAdding2.framework */; };
-		ABCA976F497932E404A22456 /* strip.sh in Resources */ = {isa = PBXBuildFile; fileRef = ABCA973322A0CC0938112CDB /* strip.sh */; };
+		E6AAAACB75032E3DACB2ADA9 /* Pods_Renhealth_TestAdding2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 939B961AD851834B666B9C0E /* Pods_Renhealth_TestAdding2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,9 +49,10 @@
 		0A4282A220E0ED210092C957 /* ExampleTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTheme.swift; sourceTree = "<group>"; };
 		0A4282A520E0ED2B0092C957 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		140EED028F589311AC4C240D /* Pods-TestAdding2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAdding2.debug.xcconfig"; path = "Target Support Files/Pods-TestAdding2/Pods-TestAdding2.debug.xcconfig"; sourceTree = "<group>"; };
-		7FFC9A9387E77A68C5CADB06 /* Pods_TestAdding2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestAdding2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ABCA973322A0CC0938112CDB /* strip.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = strip.sh; sourceTree = "<group>"; };
+		939B961AD851834B666B9C0E /* Pods_Renhealth_TestAdding2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Renhealth_TestAdding2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98E86B39FEC4D71EE5FB44AE /* Pods-Renhealth-TestAdding2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Renhealth-TestAdding2.debug.xcconfig"; path = "Target Support Files/Pods-Renhealth-TestAdding2/Pods-Renhealth-TestAdding2.debug.xcconfig"; sourceTree = "<group>"; };
 		C3BF4B368336FA816A1B92B8 /* Pods-TestAdding2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAdding2.release.xcconfig"; path = "Target Support Files/Pods-TestAdding2/Pods-TestAdding2.release.xcconfig"; sourceTree = "<group>"; };
+		CF8B0EAEDFF2709A205CD816 /* Pods-Renhealth-TestAdding2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Renhealth-TestAdding2.release.xcconfig"; path = "Target Support Files/Pods-Renhealth-TestAdding2/Pods-Renhealth-TestAdding2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44DC8F77722AAF4A4BAFCEEA /* Pods_TestAdding2.framework in Frameworks */,
+				E6AAAACB75032E3DACB2ADA9 /* Pods_Renhealth_TestAdding2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +115,6 @@
 				0A42829320E0EA320092C957 /* Assets.xcassets */,
 				0A42829520E0EA320092C957 /* LaunchScreen.storyboard */,
 				0A42829820E0EA320092C957 /* Info.plist */,
-				ABCA973322A0CC0938112CDB /* strip.sh */,
 			);
 			path = TestAdding2;
 			sourceTree = "<group>";
@@ -123,7 +122,7 @@
 		F1A5F4C0531A12FB6F6384E7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7FFC9A9387E77A68C5CADB06 /* Pods_TestAdding2.framework */,
+				939B961AD851834B666B9C0E /* Pods_Renhealth_TestAdding2.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -133,6 +132,8 @@
 			children = (
 				140EED028F589311AC4C240D /* Pods-TestAdding2.debug.xcconfig */,
 				C3BF4B368336FA816A1B92B8 /* Pods-TestAdding2.release.xcconfig */,
+				98E86B39FEC4D71EE5FB44AE /* Pods-Renhealth-TestAdding2.debug.xcconfig */,
+				CF8B0EAEDFF2709A205CD816 /* Pods-Renhealth-TestAdding2.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -222,7 +223,6 @@
 				0A014DF720E2DE15002B5694 /* logoVerticalDrclinics@3x.png in Resources */,
 				0A014DF520E2DE15002B5694 /* logoVerticalDrclinics.png in Resources */,
 				0A014DFC20E2DF38002B5694 /* Localizable.stringsdict in Resources */,
-				ABCA976F497932E404A22456 /* strip.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,15 +252,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TestAdding2/Pods-TestAdding2-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Renhealth-TestAdding2/Pods-Renhealth-TestAdding2-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TestAdding2/Pods-TestAdding2-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Renhealth-TestAdding2/Pods-Renhealth-TestAdding2-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestAdding2/Pods-TestAdding2-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Renhealth-TestAdding2/Pods-Renhealth-TestAdding2-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		95B17F5FCDD4B99E0A6E51AC /* [CP] Check Pods Manifest.lock */ = {
@@ -278,7 +278,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TestAdding2-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Renhealth-TestAdding2-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -291,15 +291,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TestAdding2/Pods-TestAdding2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Renhealth-TestAdding2/Pods-Renhealth-TestAdding2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TestAdding2/Pods-TestAdding2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Renhealth-TestAdding2/Pods-Renhealth-TestAdding2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestAdding2/Pods-TestAdding2-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Renhealth-TestAdding2/Pods-Renhealth-TestAdding2-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -469,7 +469,7 @@
 		};
 		0A42829C20E0EA320092C957 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 140EED028F589311AC4C240D /* Pods-TestAdding2.debug.xcconfig */;
+			baseConfigurationReference = 98E86B39FEC4D71EE5FB44AE /* Pods-Renhealth-TestAdding2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -526,7 +526,7 @@
 		};
 		0A42829D20E0EA320092C957 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3BF4B368336FA816A1B92B8 /* Pods-TestAdding2.release.xcconfig */;
+			baseConfigurationReference = CF8B0EAEDFF2709A205CD816 /* Pods-Renhealth-TestAdding2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
