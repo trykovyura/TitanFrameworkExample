@@ -8,7 +8,7 @@ PODS:
   - Gloss (2.1.1)
   - GoogleWebRTC (1.1.20621)
   - InputMask (4.0.2)
-  - IQKeyboardManagerSwift (6.3.0)
+  - IQKeyboardManagerSwift (6.4.0)
   - MBProgressHUD (1.1.0)
   - Mixpanel-swift (2.5.9):
     - Mixpanel-swift/Complete (= 2.5.9)
@@ -21,12 +21,12 @@ PODS:
   - RxAlamofire/Core (4.3.0):
     - Alamofire (~> 4.5)
     - RxSwift (~> 4)
-  - RxCocoa (4.3.1):
-    - RxSwift (~> 4.0)
+  - RxCocoa (4.5.0):
+    - RxSwift (>= 4.4.2, ~> 4.4)
   - RxSwift (4.5.0)
   - SnapKit (4.2.0)
   - SwiftDate (5.0.13)
-  - TitanFramework (1.4.7):
+  - TitanFramework (1.4.9-dev):
     - Alamofire (~> 4.4)
     - Crashlytics (~> 3.12.0)
     - FontBlaster (~> 4.1.0)
@@ -38,7 +38,7 @@ PODS:
     - MBProgressHUD (~> 1.1.0)
     - Mixpanel-swift (~> 2.5.6)
     - RxAlamofire (~> 4.3.0)
-    - RxCocoa (~> 4.3.0)
+    - RxCocoa (~> 4.5.0)
     - SnapKit (~> 4.2.0)
     - SwiftDate (~> 5.0.13)
     - "UITextView+Placeholder (~> 1.2.1)"
@@ -52,11 +52,9 @@ PODS:
     - ObjcExceptionBridging
 
 DEPENDENCIES:
-  - TitanFramework
+  - TitanFramework (= 1.4.9-dev)
 
 SPEC REPOS:
-  "http://AUlyanov@bitbucket.medlinesoft.ru/scm/tmk/tmk-specs.git":
-    - TitanFramework
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - Crashlytics
@@ -75,6 +73,7 @@ SPEC REPOS:
     - RxSwift
     - SnapKit
     - SwiftDate
+    - TitanFramework
     - "UITextView+Placeholder"
     - Validator
     - XCGLogger
@@ -88,20 +87,20 @@ SPEC CHECKSUMS:
   Gloss: 9df15229b2f6484c14752a738474fd2528b4c5cd
   GoogleWebRTC: bdc7453b450d0970aee538b1297f670d7234a0b1
   InputMask: b9df7a44c044f59485b2d596661e6bd4334bddb4
-  IQKeyboardManagerSwift: a8228c257614af98743b4cd8584637025f36358f
+  IQKeyboardManagerSwift: ed9b04ee0e3067ffba543283462d619f944b05e5
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   Mixpanel-swift: 4a2e061c8b7a5000ed7f72d2a6196884b5de8b49
   ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
   RxAlamofire: 09624d0f2d48ed8b686e4eb4cf68e28cbd2df556
-  RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
+  RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
   RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   SwiftDate: f4aea5fa9dee812485f34041121a4cbde01b0dee
-  TitanFramework: 9f8278dde727908ac1671c7f48a26d1bc558239f
+  TitanFramework: 238a4f26c3ed6e178e2667ef14ffc98eddb9a5e5
   "UITextView+Placeholder": 0c3efd97f37ea64bde7f34cc6e90fe02e87b3909
   Validator: b34ab17a8fffd0c1ffd8f9002ead4d1e02cd9e6e
   XCGLogger: 7f7f43f15dfe3a305fa1342b7dc29af656289abd
 
-PODFILE CHECKSUM: a29076993b84bea5dfcb0c00cf7a9dabb355b6d4
+PODFILE CHECKSUM: 9afbb8709a74bdb08c4f4780c5768a681ec9ea9a
 
 COCOAPODS: 1.7.1
