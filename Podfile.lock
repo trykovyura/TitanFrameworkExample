@@ -104,6 +104,7 @@ PODS:
     - R.swift.Library (~> 5.0.0)
   - R.swift.Library (5.0.1)
   - Result (4.1.0)
+  - Reveal-SDK (18)
   - RxAlamofire (4.3.0):
     - RxAlamofire/Core (= 4.3.0)
   - RxAlamofire/Core (4.3.0):
@@ -193,6 +194,7 @@ DEPENDENCIES:
   - NotificationBannerSwift (~> 2.0.1)
   - "NSObject+Rx (~> 4.4.1)"
   - R.swift (~> 5.0.2)
+  - Reveal-SDK (~> 18)
   - RxAtomic (~> 4.4.2)
   - RxBiBinding (~> 0.1.7)
   - RxCocoa (~> 4.0)
@@ -253,6 +255,7 @@ SPEC REPOS:
     - R.swift
     - R.swift.Library
     - Result
+    - Reveal-SDK
     - RxAlamofire
     - RxAtomic
     - RxBiBinding
@@ -323,6 +326,7 @@ SPEC CHECKSUMS:
   R.swift: f5a87643b91ea569d23d6afb3eee9c743edde239
   R.swift.Library: cfe85d569d9bae6cb262922db130e7c3a7a5fad1
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  Reveal-SDK: cce79388da3fd0bbb6ae19d769b906cfc3a33a89
   RxAlamofire: 09624d0f2d48ed8b686e4eb4cf68e28cbd2df556
   RxAtomic: d00e97c10db88c6f08540e0bf2752fc5a2404167
   RxBiBinding: 3562bc1c58521ce997ac9547a06f1fc9ffe858ba
@@ -346,6 +350,6 @@ SPEC CHECKSUMS:
   Validator: b34ab17a8fffd0c1ffd8f9002ead4d1e02cd9e6e
   XCGLogger: 7f7f43f15dfe3a305fa1342b7dc29af656289abd
 
-PODFILE CHECKSUM: 69fd096ec8bb95503ec93b01ce7f458e586a49ee
+PODFILE CHECKSUM: f9a48ef7436848ac03bd66e7826a2a856313183a
 
 COCOAPODS: 1.7.2

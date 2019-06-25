@@ -9,6 +9,7 @@
    pod 'R.swift', '~> 5.0.2'
    pod 'Swinject', '~> 2.5.0'
    pod 'SwiftDate', '~> 5.0.13'
+   pod 'Reveal-SDK', '~> 18', :configurations => ['Debug']
 
    # UI
    pod 'MaterialComponents/TextFields', '~> 77.0.0'
@@ -63,7 +64,7 @@
 
 post_install do |installer|
   
-    auto_process_target(['TestAdding2'], 'Renhealth-TestAdding2', installer)
+    auto_process_target(['Renhealth-TestAdding2'], 'Renhealth-TestAdding2', installer)
   
 end
 
