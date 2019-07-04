@@ -25,7 +25,6 @@
 		0A4282A320E0ED220092C957 /* ExampleTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4282A220E0ED210092C957 /* ExampleTheme.swift */; };
 		0A4282A620E0ED2B0092C957 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A4282A420E0ED2B0092C957 /* Localizable.strings */; };
 		44DC8F77722AAF4A4BAFCEEA /* Pods_TestAdding2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FFC9A9387E77A68C5CADB06 /* Pods_TestAdding2.framework */; };
-		ABCA976F497932E404A22456 /* strip.sh in Resources */ = {isa = PBXBuildFile; fileRef = ABCA973322A0CC0938112CDB /* strip.sh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,7 +50,6 @@
 		0A4282A520E0ED2B0092C957 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		140EED028F589311AC4C240D /* Pods-TestAdding2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAdding2.debug.xcconfig"; path = "Target Support Files/Pods-TestAdding2/Pods-TestAdding2.debug.xcconfig"; sourceTree = "<group>"; };
 		7FFC9A9387E77A68C5CADB06 /* Pods_TestAdding2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestAdding2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ABCA973322A0CC0938112CDB /* strip.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = strip.sh; sourceTree = "<group>"; };
 		C3BF4B368336FA816A1B92B8 /* Pods-TestAdding2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAdding2.release.xcconfig"; path = "Target Support Files/Pods-TestAdding2/Pods-TestAdding2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,7 +113,6 @@
 				0A42829320E0EA320092C957 /* Assets.xcassets */,
 				0A42829520E0EA320092C957 /* LaunchScreen.storyboard */,
 				0A42829820E0EA320092C957 /* Info.plist */,
-				ABCA973322A0CC0938112CDB /* strip.sh */,
 			);
 			path = TestAdding2;
 			sourceTree = "<group>";
@@ -222,7 +219,6 @@
 				0A014DF720E2DE15002B5694 /* logoVerticalDrclinics@3x.png in Resources */,
 				0A014DF520E2DE15002B5694 /* logoVerticalDrclinics.png in Resources */,
 				0A014DFC20E2DF38002B5694 /* Localizable.stringsdict in Resources */,
-				ABCA976F497932E404A22456 /* strip.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

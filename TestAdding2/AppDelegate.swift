@@ -32,9 +32,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         log2.debug("start init")
         Fabric.with([Crashlytics.self])
 
-        let BarButtonItemAppearance = UIBarButtonItem.appearance()
-        BarButtonItemAppearance.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.clear], for: .normal)
-        
+        UINavigationBar.appearance().tintColor = .red
+        // Ниже надо отключить инициализацию TitanManager и MimasManager и цвет кнопки будет красным
+        TitanManager.sharedInstance.initialize(window, application, ExampleTheme())
+
         // Override point for customization after application launch.
         MimasManager.sharedInstance.initialize(window, application, ExampleTheme())
         MimasManager.sharedInstance.initPush()
@@ -63,7 +64,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             center.removeAllDeliveredNotifications()
         }
         MimasManager.sharedInstance.initNotifications()
-//        MimasManager.sharedInstance.setLogLevel(.error)
+        MimasManager.sharedInstance.setLogLevel(.error)
         log2.debug("finish init")
 
         return true
